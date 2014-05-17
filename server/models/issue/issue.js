@@ -25,8 +25,8 @@ var IssueSchema = new Schema({
         }
     },
     userId: {
-        type: ObjectId,
-        default: 1,
+        type: String,
+        default: "fw4gg6hge5y6h56hh",
         required: true
     },
     tags: {
@@ -58,7 +58,7 @@ var IssueSchema = new Schema({
         default: []
     },
     done: {
-        type: ObjectId,
+        type: String,
         required: false
     },
     state: {
@@ -66,9 +66,35 @@ var IssueSchema = new Schema({
         default: 0
     }
 });
-
 IssueSchema.statics.example = function(){};
 IssueSchema.methods.example = function(){};
+IssueSchema.statics.watchUser = function(issueId, userId, cb){
+    this.update({ _id: issueId }, {
+        $push: {
+            watcher: userId
+        }
+    }, function (err, numberAffected, raw) {
+        if(err){
+            next(err);
+            return false;
+        }
+        cb(null);
+    });
+}
+IssueSchema.statics.unwatchUser = function(issueId, userId, cb){
+    this.update({ _id: issueId }, {
+        $pull: {
+            watcher: userId
+        }
+    }, function (err, numberAffected, raw) {
+        if(err){
+            next(err);
+            return false;
+        }
+        cb(null);
+    });
+}
+
 
 var IssueModel = mongoose.model('Issue', IssueSchema);
 module.exports = IssueModel;

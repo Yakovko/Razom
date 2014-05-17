@@ -2,15 +2,15 @@
 post
 /api/issue/create
 {
-    title: title,
-    description: ...,
-    date: server,
-    geo: ...,
-    category: id,
-    userId: //кто создал
-    tags: [''],
-    media: [files]
-}
+     title: title,
+     description: ...,
+     date: server,
+     geo: ...,
+     category: id,
+     userId: //кто создал
+     tags: [''],
+     media: [files]
+ }
 post
 /api/issue/watch
 /api/issue/apply
@@ -87,7 +87,6 @@ ISSUE
     resolution_description: "",
     apply: //люди которые решают что то
     watcher: // люди которые следят за измененими
-    confirmation: //люди, которые подтвердили что таска выполнена
     date_resolve: ...,
-    state: //open  || progress || done
+    state: //open[0]  || progress[1] || done[2]
 }

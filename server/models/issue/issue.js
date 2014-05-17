@@ -80,7 +80,7 @@ IssueSchema.statics.watchUser = function(issueId, userId, cb){
         }
         cb(null);
     });
-}
+};
 IssueSchema.statics.unwatchUser = function(issueId, userId, cb){
     this.update({ _id: issueId }, {
         $pull: {
@@ -93,7 +93,49 @@ IssueSchema.statics.unwatchUser = function(issueId, userId, cb){
         }
         cb(null);
     });
-}
+};
+IssueSchema.statics.applyUser = function(issueId, userId, cb){
+    this.update({ _id: issueId }, {
+        $push: {
+            apply: userId
+        }
+    }, function (err, numberAffected, raw) {
+        if(err){
+            next(err);
+            return false;
+        }
+        cb(null);
+    });
+};
+IssueSchema.statics.disapplyUser = function(issueId, userId, cb){
+    this.update({ _id: issueId }, {
+        $pull: {
+            apply: userId
+        }
+    }, function (err, numberAffected, raw) {
+        if(err){
+            next(err);
+            return false;
+        }
+        cb(null);
+    });
+};
+IssueSchema.statics.addComment = function(issueId, userId, message, cb){
+    this.update({ _id: issueId }, {
+        $push: {
+            comments: {
+                user: userId,
+                message: message
+            }
+        }
+    }, function (err, numberAffected, raw) {
+        if(err){
+            next(err);
+            return false;
+        }
+        cb(null);
+    });
+};
 
 
 var IssueModel = mongoose.model('Issue', IssueSchema);

@@ -15,7 +15,7 @@ var controller = {
                 return n(new HttpError(err));
             }
 
-            res.send(issue);
+            res.send({_id: issue._id});
         })
     },
 

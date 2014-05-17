@@ -117,6 +117,40 @@ var controller = {
 
             res.send();
         })
+    },
+    issues: function(req, res, n) {
+        var data = req.query;
+        var category = data.category,
+            userId = data.userId,
+            state = data.status,
+            apply = data.apply,
+            watcher = data.watcher,
+            id = data.id,
+            lon = data.lon,
+            lat = data.lat,
+            radius = data.radius;
+        console.log("------------");
+        console.log(id);
+        var query = IssueModel.find({});
+
+        if(category)
+            query.where('category').equals(category);
+        if(userId)
+            query.where('userId').equals(userId);
+        if(state)
+            query.where('state').equals(state);
+        if(apply)
+            query.where('apply').equals(apply);
+        if(watcher)
+            query.where('watcher').equals(watcher);
+        if(id)
+            query.where('_id').equals(id);
+
+        query.exec(function (err, results) {
+            if (err) throw err;
+
+            console.log(results);
+        });
     }
-}
+};
 module.exports = controller;

@@ -95,8 +95,8 @@ require("mongooseDb");
  }
 
  console.log('applyUser done');
- })*/
-
+ });
+*/
 /*DISAPPLY*/
 /*
  IssueModel.disapplyUser("53777884d459967c076a08bb", "applyUserId", function(err){
@@ -109,6 +109,7 @@ require("mongooseDb");
  })*/
 
 /*COMMENT*/
+/*
 IssueModel.addComment("53777884d459967c076a08bb", "commentUserId", "comment", function(err){
     if(err) {
         console.log('addComment false');
@@ -117,3 +118,4 @@ IssueModel.addComment("53777884d459967c076a08bb", "commentUserId", "comment", fu
 
     console.log('addComment done');
 })
+*/

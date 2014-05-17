@@ -12,6 +12,7 @@ module.exports = function(app) {
     app.get('/api/issue/apply', api.apply);
     app.get('/api/issue/disapply', api.disapply);
     app.get('/api/issue/comment/add', api.addComment);
+    app.get('/api/issues', api.issues);
 
 
-}
+};

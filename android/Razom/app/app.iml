@@ -71,12 +71,14 @@
     <orderEntry type="jdk" jdkName="Android 4.4.2 Google APIs" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="gson-2.2.4" level="project" />
-    <orderEntry type="library" exported="" name="appcompat-v7-19.1.0" level="project" />
+    <orderEntry type="library" exported="" name="eventbus-2.0.2" level="project" />
+    <orderEntry type="library" exported="" name="jackson-databind-2.2.3" level="project" />
     <orderEntry type="library" exported="" name="support-v4-19.1.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-4.3.23" level="project" />
-    <orderEntry type="library" exported="" name="eventbus-2.0.2" level="project" />
+    <orderEntry type="library" exported="" name="jackson-annotations-2.2.3" level="project" />
     <orderEntry type="library" exported="" name="retrofit-1.5.1" level="project" />
-    <orderEntry type="library" exported="" name="1_retrofit-1.5.1" level="project" />
+    <orderEntry type="library" exported="" name="appcompat-v7-19.1.0" level="project" />
+    <orderEntry type="library" exported="" name="jackson-core-2.2.3" level="project" />
   </component>
 </module>
 

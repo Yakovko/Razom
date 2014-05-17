@@ -9,25 +9,34 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import actions.NavigationAction;
+import dataservice.JacksonConverter;
 import de.greenrobot.event.EventBus;
+import retrofit.RestAdapter;
 import ua.in.razom.app.R;
 import ua.in.razom.app.ui.fragments.PostIssueFragment;
 import ua.in.razom.app.ui.fragments.ProfileFragment;
+import ua.in.razom.app.ui.fragments.SelectActionFragment;
 import ua.in.razom.app.ui.fragments.ViewIssuesFragment;
-import ua.in.razom.app.ui.fragments.mapscreen.LocationFragment;
 
 
 public class MainNavigationActivity extends ActionBarActivity {
 
     private ActionBar actionBar;
+    private RestAdapter restAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
         initActionBar();
-        showFragment(LocationFragment.newInstance(), false);
+        showFragment(SelectActionFragment.newInstance(), false);
+        restAdapter = new RestAdapter.Builder()
+                .setConverter(new JacksonConverter(new ObjectMapper()))
+                .setEndpoint("http://localhost:5005")
+                .build();
     }
 
     private void initActionBar() {

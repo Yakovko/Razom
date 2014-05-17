@@ -1,2 +1,2 @@
 export NODE_PATH=/home/mue/web/sites/Razom/server
-              node server.js
+supervisor server.js

@@ -1,0 +1,7 @@
+{
+    "url" : {
+        "afterSignIn": "/projects",
+        "afterConfirmationAccount": "/projects",
+        "homePageForRegisterUser": "/projects"
+    }
+}

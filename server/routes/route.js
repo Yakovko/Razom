@@ -12,7 +12,5 @@ module.exports = function(app) {
     app.post('/api/issue/apply', api.apply);
     app.post('/api/issue/disapply', api.disapply);
     app.post('/api/issue/comment/add', api.addComment);
-    app.get('/api/category_list', api.addComment);
-
-
+    app.get('/api/category_list', api.categoryList);
 }

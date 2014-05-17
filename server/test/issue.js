@@ -6,26 +6,23 @@ var config = require('config')
 
 require("mongooseDb");
 
-/*
- CREATE
- var issue = new IssueModel({
- title: 'test title',
- description: 'test description',
- geo: {
- lat: 4,
- lon: 34
- },
- category: "454534fghhddf5",
- tags: ['tag1', 'tag2']
- });
- issue.save(function(err) {
- if(err) {
- console.log('issue done');
- return false;
- }
+/*CREATE*/
+var issue = new IssueModel({
+    title: 'test title',
+    description: 'test description',
+    lat: 4,
+    lon: 56,
+    category: "454534fghhddf5",
+    tags: ['tag1', 'tag2']
+});
+issue.save(function(err) {
+    if(err) {
+        console.log('issue done');
+        return false;
+    }
 
- console.log('issue done');
- });*/
+    console.log('issue done');
+});
 
 /*WATCH*/
 /*IssueModel.watchUser("53777884d459967c076a08bb", "watchUserId2", function(err){

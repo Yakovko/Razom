@@ -87,3 +87,34 @@ async.waterfall([
     }
     console.log('resolution_description true');
 })*/
+/*APPLY*/
+/*IssueModel.applyUser("53777884d459967c076a08bb", "applyUserId2", function(err){
+ if(err) {
+ console.log('applyUser false');
+ return false;
+ }
+
+ console.log('applyUser done');
+ })*/
+
+/*DISAPPLY*/
+/*
+ IssueModel.disapplyUser("53777884d459967c076a08bb", "applyUserId", function(err){
+ if(err) {
+ console.log('disapplyUser false');
+ return false;
+ }
+
+ console.log('disapplyUser done');
+ })*/
+
+/*COMMENT*/
+/*
+ IssueModel.addComment("53777884d459967c076a08bb", "commentUserId", "comment", function(err){
+ if(err) {
+ console.log('addComment false');
+ return false;
+ }
+
+ console.log('addComment done');
+ })*/

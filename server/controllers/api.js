@@ -1,7 +1,6 @@
 var config = require('config')
     , HttpError = require('error').HttpError
     , _ = require('underscore'),
-    async = require('async'),
     IssueModel = require('models/issue/issue');
 
 var controller = {
@@ -81,6 +80,41 @@ var controller = {
             if( err ){
                 return n(new HttpError(400, err));
             }
+            res.send();
+        })
+    },
+    apply: function(req, res, n) {
+        var data = req.body;
+
+        IssueModel.applyUser(data.issueId, data.userId, function(err){
+            if(err) {
+                return n(new HttpError(err));
+            }
+
+            res.send();
+        })
+    },
+
+    disapply: function(req, res, n) {
+        var data = req.body;
+
+        IssueModel.disapplyUser(data.issueId, data.userId, function(err){
+            if(err) {
+                return n(new HttpError(err));
+            }
+
+            res.send();
+        })
+    },
+
+    addComment: function(req, res, n) {
+        var data = req.body;
+
+        IssueModel.addComment(data.issueId, data.userId, data.message, function(err){
+            if(err) {
+                return n(new HttpError(err));
+            }
+
             res.send();
         })
     }

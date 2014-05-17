@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import actions.NavigationAction;
+import dataservice.Api;
 import de.greenrobot.event.EventBus;
 import ua.in.razom.app.R;
 import ua.in.razom.app.ui.fragments.PostIssueFragment;
@@ -25,6 +26,7 @@ public class MainNavigationActivity extends ActionBarActivity {
         setContentView(R.layout.activity_navigation);
         initActionBar();
         showFragment(LocationFragment.newInstance(), false);
+        Api.InitDataService();
     }
 
     private void initActionBar() {

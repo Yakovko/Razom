@@ -11,6 +11,13 @@ android {
         versionName "1.0"
 
     }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+
     buildTypes {
         release {
             runProguard false
@@ -25,4 +32,8 @@ dependencies {
     compile 'de.greenrobot:eventbus:2.0.2'
     compile 'com.google.android.gms:play-services:4.3.23'
     compile 'com.squareup.retrofit:retrofit:1.5.1'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.2.+'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.2.+'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.2.+'
+    compile 'com.google.code.gson:gson:2.2.4'
 }

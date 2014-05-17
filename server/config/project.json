@@ -1,4 +1,4 @@
 {
-    "port": "5005",
+    "port": "60010",
     "mongoUrl" : "mongodb://mue:m13u11e86@ds043329.mongolab.com:43329/razom"
 }

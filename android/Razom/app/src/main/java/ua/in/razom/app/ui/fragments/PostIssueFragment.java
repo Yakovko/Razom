@@ -33,7 +33,9 @@ public class PostIssueFragment extends Fragment {
 
     @Override
     public void onResume() {
+
         super.onResume();
+
     }
 
     @Override

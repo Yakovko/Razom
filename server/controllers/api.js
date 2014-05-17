@@ -141,8 +141,6 @@ var controller = {
             lon = data.lon,
             lat = data.lat,
             radius = data.radius;
-        console.log("------------");
-        console.log(id);
         var query = IssueModel.find({});
 
         if(category)
@@ -157,6 +155,16 @@ var controller = {
             query.where('watcher').equals(watcher);
         if(id)
             query.where('_id').equals(id);
+        if(lon != undefined &&  lat  != undefined && radius != undefined) {
+            lon = parseInt(lon);
+            lat = parseInt(lat);
+            radius = parseInt(radius);
+
+            query.where('lon').lt(lon + radius);
+            query.where('lon').gt(lon - radius);
+            query.where('lat').lt(lat + radius);
+            query.where('lat').gt(lat - radius);
+        }
 
         query.exec(function (err, results) {
             if (err) throw err;

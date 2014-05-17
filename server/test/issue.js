@@ -29,14 +29,14 @@ require("mongooseDb");
  });*/
 
 /*WATCH*/
-/*IssueModel.watchUser("53777884d459967c076a08bb", "watchUserId2", function(err){
+IssueModel.watchUser("5377b256590016f418719cc6", "watchUserId2", function(err){
  if(err) {
  console.log('watchUser false');
  return false;
  }
 
  console.log('watchUser done');
- })*/
+ })
 
 /*UNWATCH*/
 /*
@@ -89,14 +89,14 @@ require("mongooseDb");
  console.log('resolution_description true');
  })*/
 /*APPLY*/
-/*IssueModel.applyUser("53777884d459967c076a08bb", "applyUserId2", function(err){
+IssueModel.applyUser("5377b256590016f418719cc6", "applyUserId2", function(err){
  if(err) {
  console.log('applyUser false');
  return false;
  }
 
  console.log('applyUser done');
- })*/
+ })
 
 /*DISAPPLY*/
 /*

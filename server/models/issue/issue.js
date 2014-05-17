@@ -40,8 +40,8 @@ var IssueSchema = new Schema({
         type: Array,
         default: []
     },
-    categories: {
-        type: ObjectId,
+    category: {
+        type: String,
         required: true
     },
     likes: {

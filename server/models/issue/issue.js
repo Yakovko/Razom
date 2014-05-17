@@ -37,6 +37,10 @@ var IssueSchema = new Schema({
         type: Array,
         default: []
     },
+    categories: {
+        type: ObjectId,
+        required: true
+    },
     likes: {
         type: Number,
         default: 0

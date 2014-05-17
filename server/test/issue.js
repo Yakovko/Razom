@@ -50,43 +50,43 @@ require("mongooseDb");
 
 /*LIKE*/
 /*
-IssueModel.like("53777884d459967c076a08bb", function(err){
-    if(err) {
-        console.log('like false');
-        return false;
-    }
+ IssueModel.like("53777884d459967c076a08bb", function(err){
+ if(err) {
+ console.log('like false');
+ return false;
+ }
 
-    console.log('like done');
-})*/
+ console.log('like done');
+ })*/
 /*RESOLUTION*/
 /*
 
-async.waterfall([
-    function(cb){
-        IssueModel.getById("53777884d459967c076a08bb", cb);
-    },
-    function(issue, cb){
-        if(!issue){
-            cb("Cannot find Issue")
-        }
-        cb(null, issue);
-    },
-    function(issue, cb){
-        issue.resolutionDescription = "dsgdfgdsgdg";
-        issue.save(function(err){
-            if(err){
-                return cb("An error occurred. Please try again later");
-            }
-            cb(null);
-        });
-    }
-],function(err){
-    if( err ){
-        console.log('resolution_description false');
-        return false;
-    }
-    console.log('resolution_description true');
-})*/
+ async.waterfall([
+ function(cb){
+ IssueModel.getById("53777884d459967c076a08bb", cb);
+ },
+ function(issue, cb){
+ if(!issue){
+ cb("Cannot find Issue")
+ }
+ cb(null, issue);
+ },
+ function(issue, cb){
+ issue.resolutionDescription = "dsgdfgdsgdg";
+ issue.save(function(err){
+ if(err){
+ return cb("An error occurred. Please try again later");
+ }
+ cb(null);
+ });
+ }
+ ],function(err){
+ if( err ){
+ console.log('resolution_description false');
+ return false;
+ }
+ console.log('resolution_description true');
+ })*/
 /*APPLY*/
 /*IssueModel.applyUser("53777884d459967c076a08bb", "applyUserId2", function(err){
  if(err) {
@@ -109,12 +109,11 @@ async.waterfall([
  })*/
 
 /*COMMENT*/
-/*
- IssueModel.addComment("53777884d459967c076a08bb", "commentUserId", "comment", function(err){
- if(err) {
- console.log('addComment false');
- return false;
- }
+IssueModel.addComment("53777884d459967c076a08bb", "commentUserId", "comment", function(err){
+    if(err) {
+        console.log('addComment false');
+        return false;
+    }
 
- console.log('addComment done');
- })*/
+    console.log('addComment done');
+})

@@ -1,6 +1,5 @@
 package ua.in.razom.app.ui;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -14,9 +13,7 @@ import de.greenrobot.event.EventBus;
 import ua.in.razom.app.R;
 import ua.in.razom.app.ui.fragments.PostIssueFragment;
 import ua.in.razom.app.ui.fragments.ProfileFragment;
-import ua.in.razom.app.ui.fragments.ViewIssuesFragment;
 import ua.in.razom.app.ui.fragments.mapscreen.LocationFragment;
-
 
 public class MainNavigationActivity extends ActionBarActivity {
 
@@ -32,9 +29,9 @@ public class MainNavigationActivity extends ActionBarActivity {
 
     private void initActionBar() {
         actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(false);
-        actionBar.setHomeButtonEnabled(true);
-        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.hide();
+//        actionBar.setHomeButtonEnabled(true);
+//        actionBar.setDisplayShowTitleEnabled(true);
 //        actionBar.setIcon(R.drawable.logo_t2);
 
     }
@@ -93,9 +90,6 @@ public class MainNavigationActivity extends ActionBarActivity {
         switch (action) {
             case POST_ISSUE:
                 showFragment(PostIssueFragment.newInstance(), true);
-                break;
-            case VIEW_ISSUE:
-                showFragment(ViewIssuesFragment.newInstance(), true);
                 break;
             case PROFILE:
                 showFragment(ProfileFragment.newInstance(), true);

@@ -1,7 +1,4 @@
 {
-    "url" : {
-        "afterSignIn": "/projects",
-        "afterConfirmationAccount": "/projects",
-        "homePageForRegisterUser": "/projects"
-    }
+    "port": "5005",
+    "mongoUrl" : "mongodb://mue:m13u11e86@ds043329.mongolab.com:43329/razom"
 }

@@ -53,4 +53,4 @@ app.use(function(err, req, res, next){
 //create server
 var server = http.createServer(app);
 server.listen(config.get("port"));
-logger.info("Web server listening: " + config.get("port"));
+console.log("Web server listening: " + config.get("port"))

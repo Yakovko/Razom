@@ -9,12 +9,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import actions.NavigationAction;
-import dataservice.JacksonConverter;
+import dataservice.Api;
 import de.greenrobot.event.EventBus;
-import retrofit.RestAdapter;
 import ua.in.razom.app.R;
 import ua.in.razom.app.ui.fragments.PostIssueFragment;
 import ua.in.razom.app.ui.fragments.ProfileFragment;
@@ -25,7 +22,6 @@ import ua.in.razom.app.ui.fragments.ViewIssuesFragment;
 public class MainNavigationActivity extends ActionBarActivity {
 
     private ActionBar actionBar;
-    private RestAdapter restAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,10 +29,7 @@ public class MainNavigationActivity extends ActionBarActivity {
         setContentView(R.layout.activity_navigation);
         initActionBar();
         showFragment(SelectActionFragment.newInstance(), false);
-        restAdapter = new RestAdapter.Builder()
-                .setConverter(new JacksonConverter(new ObjectMapper()))
-                .setEndpoint("http://localhost:5005")
-                .build();
+        Api.InitDataService();
     }
 
     private void initActionBar() {

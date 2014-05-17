@@ -19,10 +19,13 @@ var IssueSchema = new Schema({
         type: Date,
         default: new Date()
     },
-    geo: {
-        type: {},
-        default: {
-        }
+    lat: {
+        type: Number,
+        default: 0
+    },
+    lon: {
+        type: Number,
+        default: 0
     },
     userId: {
         type: String,
@@ -37,8 +40,8 @@ var IssueSchema = new Schema({
         type: Array,
         default: []
     },
-    categories: {
-        type: ObjectId,
+    category: {
+        type: String,
         required: true
     },
     likes: {

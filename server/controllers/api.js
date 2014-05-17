@@ -1,7 +1,8 @@
 var config = require('config')
     , HttpError = require('error').HttpError
     , _ = require('underscore'),
-    IssueModel = require('models/issue/issue');
+    IssueModel = require('models/issue/issue'),
+    CategoryModel = require('models/category/category');
 
 var controller = {
     createIssue: function(req, res, n) {
@@ -118,6 +119,17 @@ var controller = {
             res.send();
         })
     },
+    categoryList: function(req, res, n) {
+        var data = req.body;
+
+        CategoryModel.find({}, function(err, categories){
+            if(err){
+                return next(new HttpError(400, "Server error"));
+            }
+            res.send(categories);
+        });
+
+    },
     issues: function(req, res, n) {
         var data = req.query;
         var category = data.category,
@@ -152,5 +164,5 @@ var controller = {
             console.log(results);
         });
     }
-};
+}
 module.exports = controller;

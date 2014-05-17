@@ -13,6 +13,9 @@ public class NewIssueObject {
     private String[] tags;
     private byte[] file; //Photo attachment. Alternatively can use "TypedFile" type
 
+    public NewIssueObject() {
+    }
+
     public String getTitle() {
         return title;
     }

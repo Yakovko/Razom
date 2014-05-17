@@ -1,6 +1,5 @@
 package ua.in.razom.app.ui;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -9,41 +8,32 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import actions.NavigationAction;
-import dataservice.JacksonConverter;
+import dataservice.Api;
 import de.greenrobot.event.EventBus;
-import retrofit.RestAdapter;
 import ua.in.razom.app.R;
 import ua.in.razom.app.ui.fragments.PostIssueFragment;
 import ua.in.razom.app.ui.fragments.ProfileFragment;
-import ua.in.razom.app.ui.fragments.SelectActionFragment;
-import ua.in.razom.app.ui.fragments.ViewIssuesFragment;
-
+import ua.in.razom.app.ui.fragments.mapscreen.LocationFragment;
 
 public class MainNavigationActivity extends ActionBarActivity {
 
     private ActionBar actionBar;
-    private RestAdapter restAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
         initActionBar();
-        showFragment(SelectActionFragment.newInstance(), false);
-        restAdapter = new RestAdapter.Builder()
-                .setConverter(new JacksonConverter(new ObjectMapper()))
-                .setEndpoint("http://localhost:5005")
-                .build();
+        showFragment(LocationFragment.newInstance(), false);
+        Api.InitDataService();
     }
 
     private void initActionBar() {
         actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(false);
-        actionBar.setHomeButtonEnabled(true);
-        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.hide();
+//        actionBar.setHomeButtonEnabled(true);
+//        actionBar.setDisplayShowTitleEnabled(true);
 //        actionBar.setIcon(R.drawable.logo_t2);
 
     }
@@ -102,9 +92,6 @@ public class MainNavigationActivity extends ActionBarActivity {
         switch (action) {
             case POST_ISSUE:
                 showFragment(PostIssueFragment.newInstance(), true);
-                break;
-            case VIEW_ISSUE:
-                showFragment(ViewIssuesFragment.newInstance(), true);
                 break;
             case PROFILE:
                 showFragment(ProfileFragment.newInstance(), true);

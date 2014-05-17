@@ -2,6 +2,7 @@ var config = require('config')
     , HttpError = require('error').HttpError
     , _ = require('underscore'),
     async = require('async'),
+    CategoryModel = require('models/category/category'),
     IssueModel = require('models/issue/issue');
 
 require("mongooseDb");
@@ -95,8 +96,8 @@ require("mongooseDb");
  }
 
  console.log('applyUser done');
- });
-*/
+ })*/
+
 /*DISAPPLY*/
 /*
  IssueModel.disapplyUser("53777884d459967c076a08bb", "applyUserId", function(err){
@@ -117,5 +118,14 @@ IssueModel.addComment("53777884d459967c076a08bb", "commentUserId", "comment", fu
     }
 
     console.log('addComment done');
-})
-*/
+})*/
+
+/*CATEGORY GET LIST*/
+/*
+CategoryModel.find({}, function(err, categories){
+    if(err){
+        console.log("error get category list");
+        return false;
+    }
+    console.log(categories);
+});*/

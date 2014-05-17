@@ -15,7 +15,11 @@ app.configure(function() {
     app.use(express.cookieParser());
     app.use(express.bodyParser({ keepExtensions: true, uploadDir: './tmp' }));
     app.set('views', __dirname + "/views");
-    app.engine('.hbs', exphbs({extname: '.hbs'}));
+    app.engine('.hbs', exphbs({
+        extname: '.hbs',
+        defaultLayout: 'main',
+        layoutsDir: __dirname + '/views/layouts'
+    }));
     app.set('view engine', '.hbs');
 });
 
@@ -53,4 +57,4 @@ app.use(function(err, req, res, next){
 //create server
 var server = http.createServer(app);
 server.listen(config.get("port"));
-console.log("Web server listening: " + config.get("port"))
+console.log("Web server listening: " + config.get("port"));

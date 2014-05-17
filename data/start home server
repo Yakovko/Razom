@@ -2,5 +2,7 @@ cd /home/mue/web/sites/Razom/server
 export NODE_PATH=/home/mue/web/sites/Razom/server
 supervisor server.js
 
-
 netstat -lnptu | grep 60010
+
+SET NODE_PATH=E:\mue\Razom\server
+node server.js

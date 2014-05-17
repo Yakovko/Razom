@@ -1,0 +1,92 @@
+1. создание таски
+post
+/api/issue/create
+{
+     title: title,
+     description: ...,
+     date: server,
+     geo: ...,
+     category: id,
+     userId: //кто создал
+     tags: [''],
+     media: [files]
+ }
+post
+/api/issue/watch
+/api/issue/apply
+2. подписаться на issue watch || apply
+{
+    userId: '',
+    issueId: ''
+}
+post
+/api/issue/unwatch
+/api/issue/disapply
+4. отписаться на issue watch || apply
+{
+    userId: '',
+    issueId: ''
+}
+post
+/api/issue/like
+5. like
+{
+    userId: '',
+    issueId: ''
+}
+post
+/api/issue/comment/add
+6. add comment
+{
+    userId: '',
+    issueId: '',
+    message: ''
+}
+
+post
+/api/issue/resolution
+7. edit resolution_description
+{
+    userId: '',
+    issueId: '',
+    message: ''
+}
+
+8. получить все категории
+post
+/api/category_list
+
+
+post
+/api/issues
+{
+    category: id
+
+}
+9. получить таски по фильтру
+    . категория
+    . по юзеру
+    . по статусу
+    . по apply
+    . по watch
+    . по Id
+    . по geo с указанием радиуса
+
+ISSUE
+{
+    title: title,
+    description: ...,
+    date: server,
+    geo: ...,
+    category: id,
+    userId: //кто создал
+    tags: [''],
+    media: [files],
+    like: 45,
+    comments: [],
+    resolution_description: "",
+    apply: //люди которые решают что то
+    watcher: // люди которые следят за измененими
+    date_resolve: ...,
+    state: //open[0]  || progress[1] || done[2]
+}

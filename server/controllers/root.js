@@ -4,8 +4,7 @@ var config = require('config')
 
 var controller = {
     home: function(req, res, next){
-        res.render('index', {
-        });
+        res.render('index', {});
     }
 }
 module.exports = controller;

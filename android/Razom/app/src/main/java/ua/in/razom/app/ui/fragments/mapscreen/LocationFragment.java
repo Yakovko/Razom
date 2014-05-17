@@ -67,6 +67,13 @@ public class LocationFragment extends Fragment implements
     }
 
     @Override
+    public void onResume() {
+        mapView.onResume();
+
+        super.onResume();
+    }
+
+    @Override
     public void onLowMemory() {
         super.onLowMemory();
         mapView.onLowMemory();

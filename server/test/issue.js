@@ -1,0 +1,89 @@
+var config = require('config')
+    , HttpError = require('error').HttpError
+    , _ = require('underscore'),
+    async = require('async'),
+    IssueModel = require('models/issue/issue');
+
+require("mongooseDb");
+
+/*
+ CREATE
+ var issue = new IssueModel({
+ title: 'test title',
+ description: 'test description',
+ geo: {
+ lat: 4,
+ lon: 34
+ },
+ category: "454534fghhddf5",
+ tags: ['tag1', 'tag2']
+ });
+ issue.save(function(err) {
+ if(err) {
+ console.log('issue done');
+ return false;
+ }
+
+ console.log('issue done');
+ });*/
+
+/*WATCH*/
+/*IssueModel.watchUser("53777884d459967c076a08bb", "watchUserId2", function(err){
+ if(err) {
+ console.log('watchUser false');
+ return false;
+ }
+
+ console.log('watchUser done');
+ })*/
+
+/*UNWATCH*/
+/*
+ IssueModel.unwatchUser("53777884d459967c076a08bb", "watchUserId2", function(err){
+ if(err) {
+ console.log('unwatchUser false');
+ return false;
+ }
+
+ console.log('unwatchUser done');
+ })*/
+
+/*LIKE*/
+/*
+IssueModel.like("53777884d459967c076a08bb", function(err){
+    if(err) {
+        console.log('like false');
+        return false;
+    }
+
+    console.log('like done');
+})*/
+/*RESOLUTION*/
+/*
+
+async.waterfall([
+    function(cb){
+        IssueModel.getById("53777884d459967c076a08bb", cb);
+    },
+    function(issue, cb){
+        if(!issue){
+            cb("Cannot find Issue")
+        }
+        cb(null, issue);
+    },
+    function(issue, cb){
+        issue.resolutionDescription = "dsgdfgdsgdg";
+        issue.save(function(err){
+            if(err){
+                return cb("An error occurred. Please try again later");
+            }
+            cb(null);
+        });
+    }
+],function(err){
+    if( err ){
+        console.log('resolution_description false');
+        return false;
+    }
+    console.log('resolution_description true');
+})*/

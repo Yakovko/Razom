@@ -1,11 +1,15 @@
 package dataservice;
 
+import java.util.List;
+
+import dataobjects.Category;
 import dataobjects.NewCommentObject;
 import dataobjects.NewIssueObject;
 import dataobjects.ResolutionObject;
 import dataobjects.UserIssueObject;
 import retrofit.Callback;
 import retrofit.http.Body;
+import retrofit.http.GET;
 import retrofit.http.POST;
 
 /**
@@ -29,6 +33,9 @@ public interface DataService {
 
     @POST("/api/issue/resolution")
     void postResolution(@Body ResolutionObject resolutionObject, Callback<ResolutionObject> cb);
+
+    @GET("/api/category_list")
+    void getCategoryList(Callback<List<Category>> cb);
 
 
 }

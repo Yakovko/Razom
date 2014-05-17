@@ -6,12 +6,12 @@ package dataobjects;
 public class NewIssueObject {
     private String title;
     private String description;
-    private float latitude;
-    private float longitude;
+    private double lat;
+    private double lon;
     private String category; // Category Id
     private String user; // Author Id
     private String[] tags;
-    private byte[] file; //Photo attachment. Alternatively can use "TypedFile" type
+    private String file; //Photo attachment. Alternatively can use "TypedFile" type
 
     public NewIssueObject() {
     }
@@ -32,20 +32,20 @@ public class NewIssueObject {
         this.description = description;
     }
 
-    public float getLatitude() {
-        return latitude;
+    public double getLat() {
+        return lat;
     }
 
-    public void setLatitude(float latitude) {
-        this.latitude = latitude;
+    public void setLat(double latitude) {
+        this.lat = latitude;
     }
 
-    public float getLongitude() {
-        return longitude;
+    public double getLon() {
+        return lon;
     }
 
-    public void setLongitude(float longitude) {
-        this.longitude = longitude;
+    public void setLon(double longitude) {
+        this.lon = longitude;
     }
 
     public String getCategory() {
@@ -72,11 +72,11 @@ public class NewIssueObject {
         this.tags = tags;
     }
 
-    public byte[] getFile() {
+    public String getFile() {
         return file;
     }
 
-    public void setFile(byte[] file) {
+    public void setFile(String file) {
         this.file = file;
     }
 }

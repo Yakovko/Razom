@@ -15,7 +15,7 @@ public class Api {
     public static void InitDataService() {
         RestAdapter = new RestAdapter.Builder()
                 .setConverter(new JacksonConverter(new ObjectMapper()))
-                .setEndpoint("http://91.222.136.254")
+                .setEndpoint("http://razom.batros.in.ua")
                 .build();
         DataService = RestAdapter.create(DataService.class);
     }

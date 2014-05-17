@@ -7,26 +7,23 @@ var config = require('config')
 
 require("mongooseDb");
 
-/*
- CREATE
- var issue = new IssueModel({
- title: 'test title',
- description: 'test description',
- geo: {
- lat: 4,
- lon: 34
- },
- category: "454534fghhddf5",
- tags: ['tag1', 'tag2']
- });
- issue.save(function(err) {
- if(err) {
- console.log('issue done');
- return false;
- }
+CREATE
+var issue = new IssueModel({
+    title: 'test title',
+    description: 'test description',
+    lat: 4,
+    lon: 34,
+    category: "454534fghhddf5",
+    tags: ['tag1', 'tag2']
+});
+issue.save(function(err) {
+    if(err) {
+        console.log('issue done');
+        return false;
+    }
 
- console.log('issue done');
- });*/
+    console.log('issue done');
+});
 
 /*WATCH*/
 IssueModel.watchUser("5377b256590016f418719cc6", "watchUserId2", function(err){
@@ -111,21 +108,21 @@ IssueModel.applyUser("5377b256590016f418719cc6", "applyUserId2", function(err){
 
 /*COMMENT*/
 /*
-IssueModel.addComment("53777884d459967c076a08bb", "commentUserId", "comment", function(err){
-    if(err) {
-        console.log('addComment false');
-        return false;
-    }
+ IssueModel.addComment("53777884d459967c076a08bb", "commentUserId", "comment", function(err){
+ if(err) {
+ console.log('addComment false');
+ return false;
+ }
 
-    console.log('addComment done');
-})*/
+ console.log('addComment done');
+ })*/
 
 /*CATEGORY GET LIST*/
 /*
-CategoryModel.find({}, function(err, categories){
-    if(err){
-        console.log("error get category list");
-        return false;
-    }
-    console.log(categories);
-});*/
+ CategoryModel.find({}, function(err, categories){
+ if(err){
+ console.log("error get category list");
+ return false;
+ }
+ console.log(categories);
+ });*/

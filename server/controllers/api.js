@@ -122,7 +122,11 @@ var controller = {
     categoryList: function(req, res, n) {
         var data = req.body;
 
-        CategoryModel.find({}, function(err, categories){
+        CategoryModel.find({}, {
+            _v: -1,
+            name: 1,
+            _id: 1
+        }, function(err, categories){
             if(err){
                 return next(new HttpError(400, "Server error"));
             }

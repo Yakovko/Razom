@@ -9,6 +9,7 @@
         "nconf": "",
         "async": "",
         "mongoose": "",
+        "request": "",
         "validator": "",
 
         "express3-handlebars": ""

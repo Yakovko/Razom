@@ -3,63 +3,9 @@ var _ = require('underscore'),
 var Schema = mongoose.Schema;
 
 var CategorySchema = new Schema({
-    title: {
+    name: {
         type: String,
         required: true
-    },
-    description: {
-        type: String,
-        required: true
-    },
-    dateCreate: {
-        type: Date,
-        default: new Date()
-    },
-    geo: {
-        type: {},
-        default: {
-        }
-    },
-    userId: {
-        type: String,
-        default: "fw4gg6hge5y6h56hh",
-        required: true
-    },
-    tags: {
-        type: Array,
-        default: []
-    },
-    media: {
-        type: Array,
-        default: []
-    },
-    likes: {
-        type: Number,
-        default: 0
-    },
-    comments: {
-        type: Array,
-        default: []
-    },
-    resolutionDescription: {
-        type: String,
-        default: ""
-    },
-    apply: {
-        type: Array,
-        default: []
-    },
-    watcher: {
-        type: Array,
-        default: []
-    },
-    done: {
-        type: String,
-        required: false
-    },
-    state: {
-        type: Number,
-        default: 0
     }
 });
 CategorySchema.statics.example = function(){};

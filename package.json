@@ -1,0 +1,16 @@
+{
+    "name": "razom-project",
+    "version": "0.0.1",
+    "dependencies": {
+        "express": "3",
+        "util": "0",
+        "underscore": "1",
+        "node-inspector": "0",
+        "nconf": "",
+        "async": "",
+        "mongoose": "",
+        "validator": "",
+
+        "express3-handlebars": ""
+    }
+}

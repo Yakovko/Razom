@@ -117,6 +117,8 @@ var controller = {
 
             res.send();
         })
-    }
+    },
+
+    categoryList: function(){}
 }
 module.exports = controller;

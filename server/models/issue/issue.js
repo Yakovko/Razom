@@ -3,65 +3,72 @@ var _ = require('underscore'),
     async = require('async'),
     mongoose = require('mongoose');
 
-var Schema = mongoose.Schema;
+var Schema = mongoose.Schema,
+    ObjectId = Schema.ObjectId;
+
 var IssueSchema = new Schema({
-    dateCreate: {
-        type: Date,
-        default: new Date(),
-        required: true
-    },
-    lastModify: {
-        type: Date,
-        default: new Date(),
-        required: true
-    },
-    name: {
+    title: {
         type: String,
-        default: "Default name",
         required: true
     },
-    userId: {
-        type: String,
-        required: false
-    },
-    isPublic: {
-        type: Boolean,
-        default: true,
-        required: true
-    },
-
-    type: {
-        type: String,
-        default: "guest",
-        required: true
-    },
-
-    share: {
-        type: Array,
-        default: [],
-        required: false
-    },
-    groups: {
-        type: Array,
-        default: [],
-        required: false
-    },
-
     description: {
         type: String,
-        default: "",
         required: true
     },
-
-    shareLink: {
+    dateCreate: {
+        type: Date,
+        default: new Date()
+    },
+    geo: {
+        type: {},
+        default: {
+        }
+    },
+    userId: {
+        type: ObjectId,
+        default: 1,
+        required: true
+    },
+    tags: {
+        type: Array,
+        default: []
+    },
+    media: {
+        type: Array,
+        default: []
+    },
+    likes: {
+        type: Number,
+        default: 0
+    },
+    comments: {
+        type: Array,
+        default: []
+    },
+    resolutionDescription: {
         type: String,
         default: ""
+    },
+    apply: {
+        type: Array,
+        default: []
+    },
+    watcher: {
+        type: Array,
+        default: []
+    },
+    done: {
+        type: ObjectId,
+        required: false
+    },
+    state: {
+        type: Number,
+        default: 0
     }
-
 });
 
 IssueSchema.statics.example = function(){};
 IssueSchema.methods.example = function(){};
 
-var ProjectModel = mongoose.model('Project', projectSchema);
-module.exports = ProjectModel;
+var IssueModel = mongoose.model('Issue', IssueSchema);
+module.exports = IssueModel;

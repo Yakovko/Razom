@@ -4,5 +4,6 @@ var rootController = require('../controllers/root')
 module.exports = function(app) {
     //static
     app.get('/', rootController.home);
+    app.get('/api/issue/create', api.createIssue);
 
 }

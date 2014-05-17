@@ -1,6 +1,7 @@
 var config = require('config')
     , HttpError = require('error').HttpError
     , _ = require('underscore'),
+    async = require('async'),
     IssueModel = require('models/issue/issue');
 
 require("mongooseDb");
@@ -38,11 +39,51 @@ require("mongooseDb");
 
 /*UNWATCH*/
 /*
-IssueModel.unwatchUser("53777884d459967c076a08bb", "watchUserId2", function(err){
+ IssueModel.unwatchUser("53777884d459967c076a08bb", "watchUserId2", function(err){
+ if(err) {
+ console.log('unwatchUser false');
+ return false;
+ }
+
+ console.log('unwatchUser done');
+ })*/
+
+/*LIKE*/
+/*
+IssueModel.like("53777884d459967c076a08bb", function(err){
     if(err) {
-        console.log('unwatchUser false');
+        console.log('like false');
         return false;
     }
 
-    console.log('unwatchUser done');
+    console.log('like done');
+})*/
+/*RESOLUTION*/
+/*
+
+async.waterfall([
+    function(cb){
+        IssueModel.getById("53777884d459967c076a08bb", cb);
+    },
+    function(issue, cb){
+        if(!issue){
+            cb("Cannot find Issue")
+        }
+        cb(null, issue);
+    },
+    function(issue, cb){
+        issue.resolutionDescription = "dsgdfgdsgdg";
+        issue.save(function(err){
+            if(err){
+                return cb("An error occurred. Please try again later");
+            }
+            cb(null);
+        });
+    }
+],function(err){
+    if( err ){
+        console.log('resolution_description false');
+        return false;
+    }
+    console.log('resolution_description true');
 })*/

@@ -94,7 +94,31 @@ IssueSchema.statics.unwatchUser = function(issueId, userId, cb){
         cb(null);
     });
 }
-
+IssueSchema.statics.like = function(issueId, cb){
+    this.update({ _id: issueId }, {$inc: {likes: 1}}, function (err, numberAffected, raw) {
+        if(err){
+            next(err);
+            return false;
+        }
+        cb(null);
+    });
+}
+IssueSchema.statics.getById = function(issueId, cb){
+    var query = {
+        _id: issueId
+    }
+    this.find(query, null, function(err, issues){
+        if( err ){
+            cb("Server error");
+            return false;
+        }
+        if( issues.length === 0 ){
+            cb(null, false);
+        }else{
+            cb(null, issues[0]);
+        }
+    });
+}
 
 var IssueModel = mongoose.model('Issue', IssueSchema);
 module.exports = IssueModel;

@@ -60,7 +60,7 @@ post
 post
 /api/issues
 {
-    category: id,
+    category: id
 
 }
 9. получить таски по фильтру

@@ -41,6 +41,48 @@ var controller = {
             res.send();
         })
     },
+
+    like: function(req, res, n) {
+        var data = req.body;
+
+        IssueModel.like(data.issueId, function(err){
+            if(err) {
+                return n(new HttpError(err));
+            }
+
+            res.send();
+        })
+    },
+
+    editResolution: function(req, res, n) {
+        var data = req.body;
+
+        async.waterfall([
+            function(cb){
+                IssueModel.getById(data.userId, cb);
+            },
+            function(issue, cb){
+                if(!issue){
+                    cb("Cannot find Issue");
+                }
+                cb(null, issue);
+            },
+            function(issue, cb){
+                issue.resolutionDescription = data.message;
+                issue.save(function(err){
+                    if(err){
+                        return cb("An error occurred. Please try again later");
+                    }
+                    cb(null);
+                });
+            }
+        ],function(err){
+            if( err ){
+                return n(new HttpError(400, err));
+            }
+            res.send();
+        })
+    },
     apply: function(req, res, n) {
         var data = req.body;
 
@@ -76,5 +118,5 @@ var controller = {
             res.send();
         })
     }
-};
+}
 module.exports = controller;

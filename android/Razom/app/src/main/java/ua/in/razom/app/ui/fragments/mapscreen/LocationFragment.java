@@ -121,14 +121,15 @@ public class LocationFragment extends Fragment implements
     }
 
     private void addIssuesToMap(List<Issue> issues) {
-        for (Issue issue : issues) {
-            int icon_res_id;
-
+        int[] pins = {R.drawable.pin02, R.drawable.pin03, R.drawable.pin04, R.drawable.pin05, R.drawable.pin01};
+        for (int i = 0; i < issues.size(); i++) {
+            Issue issue = issues.get(i);
+            int pin = 0;
             map.addMarker(new MarkerOptions()
                     .position(new LatLng(issue.getLat(), issue.getLon()))
                     .title(issue.get_id())
                     .draggable(false)
-                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.pin02)));
+                    .icon(BitmapDescriptorFactory.fromResource(pins[i % pins.length])));
         }
     }
 
@@ -156,15 +157,16 @@ public class LocationFragment extends Fragment implements
         // Display the connection status
         Toast.makeText(getActivity(), "Connected", Toast.LENGTH_SHORT).show();
         Location currentLocation = locationClient.getLastLocation();
-        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()), 15);
-        map.animateCamera(cameraUpdate);
+        if (currentLocation != null) {
+            CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()), 15);
+            map.animateCamera(cameraUpdate);
+        }
     }
 
     @Override
     public void onDisconnected() {
         // Display the connection status
-        Toast.makeText(getActivity(), "Disconnected. Please re-connect.",
-                Toast.LENGTH_SHORT).show();
+
     }
 
     @Override

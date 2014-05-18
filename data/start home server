@@ -6,3 +6,6 @@ netstat -lnptu | grep 60010
 
 SET NODE_PATH=E:\mue\Razom\server
 node server.js
+
+export NODE_PATH=/home/mue/web/projects/Razom/server/
+node allcategoryToSocial.js

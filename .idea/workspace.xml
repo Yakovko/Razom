@@ -2,8 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d77a642-3a71-4566-b1a4-facc316c0f9b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/parallax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/404.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/bg_stripped.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/views/partials/header.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/shade.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitigone.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/baloons/BaloonItemizedOverlay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/baloons/BaloonOverlayView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/baloons/CustomBaloonOverlayView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/baloons/CustomItemizedOverlay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/baloons/CustomOverlayItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/baloon_overlay.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/libs/handlebars.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/thirdparty/bootstrap-3.1.1/docs/examples/navbar/index.html~HEAD" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/thirdparty/bootstrap-3.1.1/docs/examples/navbar-fixed-top/index.html~HEAD" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/thirdparty/bootstrap-3.1.1/docs/examples/navbar-static-top/index.html~HEAD" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/views/issue.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/views/issueList.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/less/style.less~HEAD" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/drawable/text_lines.xml" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\.idea\Razom.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\.idea\jsLibraryMappings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\vcs.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/.gitignore" afterPath="$PROJECT_DIR$/android/Razom/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/.gitignore" afterPath="$PROJECT_DIR$/android/Razom/app/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/mapscreen/LocationFragment.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/mapscreen/LocationFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/PostIssueFragment.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/PostIssueFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Razom_node_modules.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Razom_node_modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/api.js" afterPath="$PROJECT_DIR$/server/controllers/api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/error.hbs" afterPath="$PROJECT_DIR$/server/views/error.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/fragment_post_issue.xml" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/fragment_post_issue.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/index.hbs" afterPath="$PROJECT_DIR$/server/views/index.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/models/issue/issue.js" afterPath="$PROJECT_DIR$/server/models/issue/issue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/test/issue.js" afterPath="$PROJECT_DIR$/server/test/issue.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/layouts/main.hbs" afterPath="$PROJECT_DIR$/server/views/layouts/main.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/root.js" afterPath="$PROJECT_DIR$/server/controllers/root.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/route.js" afterPath="$PROJECT_DIR$/server/routes/route.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/middleware/sendHttpError.js" afterPath="$PROJECT_DIR$/server/middleware/sendHttpError.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/public/style.css" afterPath="$PROJECT_DIR$/server/public/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -12,7 +63,7 @@
     <file path="/Dummy.txt" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400400895576" ignored="false" />
     <file path="/main.hbs" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400407798699" ignored="false" />
     <file path="/site-layout.css" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400400953800" ignored="false" />
-    <file path="/style.css" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400405277606" ignored="false" />
+    <file path="/style.css" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400415820516" ignored="false" />
     <file path="/index.hbs" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400402075187" ignored="false" />
     <file path="/parallax.js" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400411890871" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +88,7 @@
       <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="7" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.0">
+            <state line="74" column="7" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -55,19 +106,18 @@
       <file leaf-file-name="index.hbs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="6" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0">
+            <state line="115" column="6" selection-start="4495" selection-end="4495" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/public/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="12" selection-start="229720" selection-end="229720" vertical-scroll-proportion="-2.04">
+            <state line="129" column="20" selection-start="117673" selection-end="117673" vertical-scroll-proportion="0.42902207">
               <folding>
-                <element signature="e#113587#114506#2" expanded="true" />
-                <element signature="e#228294#229213#2" expanded="true" />
+                <element signature="e#113507#114426#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,16 +126,16 @@
       <file leaf-file-name="main.hbs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/views/layouts/main.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="4" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
+            <state line="8" column="4" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parallax.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="parallax.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/public/js/parallax.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="26" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.6647887">
+            <state line="70" column="29" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -114,9 +164,9 @@
         <option value="$PROJECT_DIR$/server/public/less/site-layout.less" />
         <option value="D:/хакатон/Razom-UI/less/site-layout.css" />
         <option value="$PROJECT_DIR$/server/views/index.hbs" />
-        <option value="$PROJECT_DIR$/server/public/style.css" />
         <option value="$PROJECT_DIR$/server/views/layouts/main.hbs" />
         <option value="$PROJECT_DIR$/server/public/js/parallax.js" />
+        <option value="$PROJECT_DIR$/server/public/style.css" />
       </list>
     </option>
   </component>
@@ -316,11 +366,6 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\hakaton\Razom\server\public\less" />
-    </key>
-  </component>
   <component name="RunManager" selected="Node.js.local">
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
       <envs>
@@ -482,15 +527,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="91" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#113587#114506#2" expanded="true" />
-            <element signature="e#228294#229213#2" expanded="true" />
+            <element signature="e#113507#114426#2" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="7" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.0">
+        <state line="74" column="7" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -523,35 +567,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="6" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/public/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="12" selection-start="229720" selection-end="229720" vertical-scroll-proportion="-2.04">
-          <folding>
-            <element signature="e#113587#114506#2" expanded="true" />
-            <element signature="e#228294#229213#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/views/layouts/main.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
+        <state line="8" column="4" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/public/js/parallax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="26" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.6647887">
+        <state line="70" column="29" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="6" selection-start="4495" selection-end="4495" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/public/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="20" selection-start="117673" selection-end="117673" vertical-scroll-proportion="0.42902207">
+          <folding>
+            <element signature="e#113507#114426#2" expanded="true" />
           </folding>
         </state>
       </provider>

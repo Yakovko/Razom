@@ -195,6 +195,5 @@ IssueSchema.statics.addComment = function(issueId, userId, message, cb){
     });
 };
 
-
 var IssueModel = mongoose.model('Issue', IssueSchema);
 module.exports = IssueModel;

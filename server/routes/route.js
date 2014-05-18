@@ -4,6 +4,7 @@ var rootController = require('../controllers/root')
 module.exports = function(app) {
     //static
     app.get('/', rootController.home);
+    app.get('/issue/:id', rootController.issue);
     app.post('/api/issue/create', api.createIssue);
     app.post('/api/issue/watch', api.watch);
     app.post('/api/issue/unwatch', api.unwatch);
@@ -15,5 +16,6 @@ module.exports = function(app) {
     app.get('/api/category_list', api.categoryList);
     app.get('/api/issues', api.issues);
 
-    app.get('/home/map', rootController.map);
+    app.get('/map', rootController.map);
+    app.get('/issues', rootController.issues);
 }

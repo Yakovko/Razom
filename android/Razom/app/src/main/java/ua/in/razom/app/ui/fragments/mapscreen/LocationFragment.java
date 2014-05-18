@@ -20,6 +20,7 @@ import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.maps.Overlay;
 
 import java.util.List;
 
@@ -42,6 +43,7 @@ public class LocationFragment extends Fragment implements
     private MapView mapView;
     private GoogleMap map;
     private View addPinView;
+    private List<Overlay> overlays;
 
     public static LocationFragment newInstance() {
         return new LocationFragment();

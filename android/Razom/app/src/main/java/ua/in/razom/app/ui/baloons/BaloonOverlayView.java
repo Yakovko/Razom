@@ -16,28 +16,26 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.google.android.maps.OverlayItem;
-
 import ua.in.razom.app.R;
 
-public class BaloonOverlayView<Item extends OverlayItem> extends FrameLayout {
+public class BaloonOverlayView<Item extends CustomOverlayItem> extends FrameLayout {
 
     private LinearLayout layout;
     private ImageView image;
     private TextView title;
 
     /**
-     * Create a new BalloonOverlayView.
+     * Create a new BaloonOverlayView.
      *
-     * @param context             - The activity context.
-     * @param balloonBottomOffset - The bottom padding (in pixels) to be applied
-     *                            when rendering this view.
+     * @param context            - The activity context.
+     * @param baloonBottomOffset - The bottom padding (in pixels) to be applied
+     *                           when rendering this view.
      */
-    public BaloonOverlayView(Context context, int balloonBottomOffset) {
+    public BaloonOverlayView(Context context, int baloonBottomOffset) {
 
         super(context);
 
-        setPadding(10, 0, 10, balloonBottomOffset);
+        setPadding(10, 0, 10, baloonBottomOffset);
 
         layout = new LimitLinearLayout(context);
         layout.setVisibility(VISIBLE);
@@ -53,8 +51,8 @@ public class BaloonOverlayView<Item extends OverlayItem> extends FrameLayout {
     }
 
     /**
-     * Inflate and initialize the BalloonOverlayView UI. Override this method
-     * to provide a custom view/layout for the balloon.
+     * Inflate and initialize the BaloonOverlayView UI. Override this method
+     * to provide a custom view/layout for the baloon.
      *
      * @param context - The activity context.
      * @param parent  - The root layout into which you must inflate your view.
@@ -64,8 +62,8 @@ public class BaloonOverlayView<Item extends OverlayItem> extends FrameLayout {
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View v = inflater.inflate(R.layout.baloon_overlay, parent);
-        image = (ImageView) v.findViewById(R.id.balloon_item_image);
-        title = (TextView) v.findViewById(R.id.balloon_item_title);
+        image = (ImageView) v.findViewById(R.id.baloon_item_image);
+        title = (TextView) v.findViewById(R.id.baloon_item_title);
 
     }
 
@@ -84,9 +82,9 @@ public class BaloonOverlayView<Item extends OverlayItem> extends FrameLayout {
      * your own data/view mappings.
      *
      * @param item   - The overlay item containing the relevant view data.
-     * @param parent - The parent layout for this BalloonOverlayView.
+     * @param parent - The parent layout for this BaloonOverlayView.
      */
-    protected void setBaloonData(Item item, ViewGroup parent) {
+    protected void setBaloonData(CustomOverlayItem item, ViewGroup parent) {
         if (image.getDrawable() != null) {
             image.setImageBitmap(item.getImageBitmap());
         } else {

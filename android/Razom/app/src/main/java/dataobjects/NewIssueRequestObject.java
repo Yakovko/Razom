@@ -11,7 +11,7 @@ public class NewIssueRequestObject {
     private String category; // Category Id
     private String user; // Author Id
     private String[] tags;
-    private String media; //Photo attachment as Base64 String
+    private String[] media; //Photo attachment as Base64 String
 
     public NewIssueRequestObject() {
     }
@@ -72,11 +72,11 @@ public class NewIssueRequestObject {
         this.tags = tags;
     }
 
-    public String getMedia() {
+    public String[] getMedia() {
         return media;
     }
 
-    public void setMedia(String media) {
+    public void setMedia(String[] media) {
         this.media = media;
     }
 }

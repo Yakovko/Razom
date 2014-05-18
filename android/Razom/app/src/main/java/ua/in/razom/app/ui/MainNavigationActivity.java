@@ -21,7 +21,7 @@ import retrofit.client.Response;
 import ua.in.razom.app.R;
 import ua.in.razom.app.ui.fragments.PostIssueFragment;
 import ua.in.razom.app.ui.fragments.ProfileFragment;
-import ua.in.razom.app.ui.fragments.mapscreen.LocationFragment;
+import ua.in.razom.app.ui.fragments.TestApiFragment;
 
 public class MainNavigationActivity extends ActionBarActivity {
 
@@ -33,7 +33,7 @@ public class MainNavigationActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
         initActionBar();
-        showFragment(LocationFragment.newInstance(), false);
+        showFragment(TestApiFragment.newInstance(), false);
         Api.InitDataService();
         categories = new ArrayList<Category>();
         requestCategories();

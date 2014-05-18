@@ -17,4 +17,5 @@ module.exports = function(app) {
     app.get('/api/issues', api.issues);
 
     app.get('/home/map', rootController.map);
+    app.get('/home/issues', rootController.issues);
 }

@@ -1,0 +1,34 @@
+<style type="text/css" rel="stylesheet">
+    .main-issue-list {
+        background: white;
+    }
+
+    .user-issue-list {
+        background: lightgray;
+    }
+
+    .issueItem {
+        padding: 20px 5%;
+        background: #ddeeff;
+        margin-top: 20px;
+    }
+</style>
+<div class="main-page-wrapper container">
+    <h1>Всі проблеми</h1>
+    <div class="row row-xs-height">
+        <div class="col-lg-7 col-xs-height main-issue-list">
+            {{#each issues}}
+                <div class="issueItem row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-10"><div class="right">
+                        <h4><a href="#">{{title}}</a></h4>
+                        <div class="issueShortDescription">{{description}}</div>
+                        <a href="#" class="btn btn-info btn-sm pull-right">Детальніше</a>
+                    </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+        <div class="col-lg-5 col-xs-height user-issue-list">afdsf</div>
+    </div>
+</div>

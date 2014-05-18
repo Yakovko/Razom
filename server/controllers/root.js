@@ -1,8 +1,9 @@
 var config = require('config')
     , HttpError = require('error').HttpError
     , IssueModel = require('models/issue/issue')
-    , CategoryModel = require('models/category/category')
-    , _ = require('underscore');
+    , CategoryModel = require('models/category/category'),
+    , _ = require('underscore'),
+    api = require('../controllers/api');
 
 var controller = {
     home: function(req, res, next){
@@ -10,6 +11,15 @@ var controller = {
     },
     map: function(req, res, next){
         res.render('map', {});
+    },
+    issues: function(req, res, next) {
+        var query = api.issuesQuery(req, res);
+
+        query.exec(function (err, results) {
+            if (err) throw err;
+
+            res.render('issueList', {issues: results});
+        });
     },
     issue: function(req,res, n){
 

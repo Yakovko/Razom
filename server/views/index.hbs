@@ -13,12 +13,12 @@
             <div class="col-lg-6">
                 <p class="block-title"> Щось заважає жити?</p>
                 <p class="second-line">Інфоромуй про проблеми й знаходь однодумців для їх вирішення</p>
-                <a href="#" class="btn btn-success btn-sm"><i class="fa fa-mail-forward"></i> Розпочни сам </a>
+                <a href="#" class="btn btn-success "><i class="fa fa-mail-forward"></i> Розпочни сам </a>
             </div>
             <div class="col-lg-6">
                 <p class="block-title"> Є час й надхнення допомогти?</p>
                 <p class="second-line">Долучайся до реалізації <br/> поліпшень</p>
-                <a href="#" class="btn btn-success btn-sm"><i class="fa fa-mail-forward"></i> Заходь </a>
+                <a href="#" class="btn btn-success "><i class="fa fa-mail-forward"></i> Заходь </a>
             </div>
         </div>
 
@@ -47,7 +47,14 @@
     </div>
     </div>
 </div>
-
+<div class="">
+    <div class="main-page-wrapper">
+        <h3><span>Проблеми поблизу</span></h3>
+    </div>
+    <div class="main-page-wrapper">
+        <div id="map_canvas" style="height: 300px;"></div>
+    </div>
+</div>
     <div class="b-how-it-works b-big-shade">
         <div class="main-page-wrapper">
             <h3><span>Як це працює</span></h3>
@@ -61,42 +68,46 @@
                                 <i class="fa fa-bullhorn fa-3x"></i>
                             </div>
                             <p class="description">
-                                Інформуй про проблеми свого міста на сайті чи за допомогою мобільного додатку
+                                Зверни увагу інших на проблему за допомогою мобільного додатку чи на сайті
                             </p>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
                         <div class="content">
                             <div class="icon">
-                                <i class="fa fa-bullhorn fa-3x"></i>
+                                <i class="fa fa-flag fa-3x"></i>
                             </div>
                             <p class="description">
-                                Інформуй про проблеми свого міста на сайті чи за допомогою мобільного додатку
+                                Дізнавася що турбує мешканців навколо тебе й долучайся до поліпшення середовища, що нас оточує
                             </p>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
                         <div class="content">
                             <div class="icon">
-                                <i class="fa fa-bullhorn fa-3x"></i>
+                                <i class="fa fa-users fa-3x"></i>
                             </div>
                             <p class="description">
-                                Інформуй про проблеми свого міста на сайті чи за допомогою мобільного додатку
+                                Об'єднуйся з однодумцями та вирішуйте проблеми гуртом
                             </p>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
                         <div class="content">
                             <div class="icon">
-                                <i class="fa fa-bullhorn fa-3x"></i>
+                                <i class="fa fa-graduation-cap fa-3x"></i>
                             </div>
                             <p class="description">
-                                Інформуй про проблеми свого міста на сайті чи за допомогою мобільного додатку
+                                Діллись успішним досвідом вирішення проблем
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="main-page-wrapper b-sosials-inner">
+            <p class="b-sosials"></p>
         </div>
 
     </div>
@@ -116,3 +127,41 @@
       </div>
    </div>-->
 </div>
+<script type="text/javascript">
+    function initialize() {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            console.log(position);
+            var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+            var myOptions = {
+                zoom: 12,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+            $.get("api/issues?lon=" + position.coords.longitude + "&lat=" + position.coords.latitude + "&radius=" + 500, function(data) {
+                for(var i = 0; i < data.length; i++) {
+                    var issue = data[i];
+
+                    var contentString = '<div style="padding: 10px;"><img style="width: 80px; height: 80px; float:left;;" src="' + issue.media[0] + '"/><div style="float: right; margin-left: 10px;"><div style="font-size: 18px;">'+ issue.title +'</div>' + issue.description + '</div></div>';
+                    var infoWindow = new google.maps.InfoWindow({
+                        content: contentString,
+                        maxWidth: '400px'
+                    });
+
+                    var marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(issue.lat, issue.lon),
+                        map: map,
+                        title: issue.title
+                    });
+
+                    google.maps.event.addListener(marker, 'click', function() {
+                        infoWindow.open(map,marker);
+                    });
+                }
+            });
+        });
+    }
+
+    initialize();
+</script>

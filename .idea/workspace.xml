@@ -2,59 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d77a642-3a71-4566-b1a4-facc316c0f9b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/404.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/bg_stripped.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/views/partials/header.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/shade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitigone.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/baloons/BaloonItemizedOverlay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/baloons/BaloonOverlayView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/baloons/CustomBaloonOverlayView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/baloons/CustomItemizedOverlay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/baloons/CustomOverlayItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/baloon_overlay.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/libs/handlebars.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/thirdparty/bootstrap-3.1.1/docs/examples/navbar/index.html~HEAD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/thirdparty/bootstrap-3.1.1/docs/examples/navbar-fixed-top/index.html~HEAD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/thirdparty/bootstrap-3.1.1/docs/examples/navbar-static-top/index.html~HEAD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/views/issue.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/views/issueList.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/less/style.less~HEAD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/drawable/text_lines.xml" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\.idea\Razom.iml" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\.idea\jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\copyright\profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\gradle.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\scopes\scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\.idea\vcs.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/.gitignore" afterPath="$PROJECT_DIR$/android/Razom/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/.gitignore" afterPath="$PROJECT_DIR$/android/Razom/app/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/Logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/socials.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/drawable/textedit_bg.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/drawable/upload_pic_icon01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/adapters/MapInfoWindowAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/map_balloon.xml" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\app\src\main\java\ua\in\razom\app\ui\baloons\BaloonItemizedOverlay.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\app\src\main\java\ua\in\razom\app\ui\baloons\BaloonOverlayView.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\app\src\main\java\ua\in\razom\app\ui\baloons\CustomBaloonOverlayView.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\app\src\main\java\ua\in\razom\app\ui\baloons\CustomItemizedOverlay.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\app\src\main\java\ua\in\razom\app\ui\baloons\CustomOverlayItem.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\app\src\main\res\layout\baloon_overlay.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\server\views\map.hbs" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataservice/DataService.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataservice/DataService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/mapscreen/LocationFragment.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/mapscreen/LocationFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/MainNavigationActivity.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/MainNavigationActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/actions/NavigationAction.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/actions/NavigationAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/PostIssueFragment.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/PostIssueFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Razom_node_modules.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Razom_node_modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/api.js" afterPath="$PROJECT_DIR$/server/controllers/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/error.hbs" afterPath="$PROJECT_DIR$/server/views/error.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/fragment_post_issue.xml" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/fragment_post_issue.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/index.hbs" afterPath="$PROJECT_DIR$/server/views/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/models/issue/issue.js" afterPath="$PROJECT_DIR$/server/models/issue/issue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/test/issue.js" afterPath="$PROJECT_DIR$/server/test/issue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/issueList.hbs" afterPath="$PROJECT_DIR$/server/views/issueList.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/layouts/main.hbs" afterPath="$PROJECT_DIR$/server/views/layouts/main.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/root.js" afterPath="$PROJECT_DIR$/server/controllers/root.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/route.js" afterPath="$PROJECT_DIR$/server/routes/route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/middleware/sendHttpError.js" afterPath="$PROJECT_DIR$/server/middleware/sendHttpError.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/public/style.css" afterPath="$PROJECT_DIR$/server/public/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -106,7 +77,7 @@
       <file leaf-file-name="index.hbs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="6" selection-start="4495" selection-end="4495" vertical-scroll-proportion="0.0">
+            <state line="164" column="0" selection-start="6476" selection-end="6476" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,7 +86,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/public/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="20" selection-start="117673" selection-end="117673" vertical-scroll-proportion="0.42902207">
+            <state line="117" column="20" selection-start="117428" selection-end="117428" vertical-scroll-proportion="0.42902207">
               <folding>
                 <element signature="e#113507#114426#2" expanded="true" />
               </folding>
@@ -126,7 +97,7 @@
       <file leaf-file-name="main.hbs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/views/layouts/main.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+            <state line="9" column="4" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -569,7 +540,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/views/layouts/main.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+        <state line="9" column="4" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -585,14 +556,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/views/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="6" selection-start="4495" selection-end="4495" vertical-scroll-proportion="0.0">
+        <state line="164" column="0" selection-start="6476" selection-end="6476" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="20" selection-start="117673" selection-end="117673" vertical-scroll-proportion="0.42902207">
+        <state line="117" column="20" selection-start="117428" selection-end="117428" vertical-scroll-proportion="0.42902207">
           <folding>
             <element signature="e#113507#114426#2" expanded="true" />
           </folding>

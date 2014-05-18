@@ -39,7 +39,9 @@
             </div>
             {{#each issues}}
                 <div class="issueItem row">
-                    <div class="col-lg-2"></div>
+                    <div class="col-lg-2">
+                        <img src="{{media.[0]}}" width="70" height="70" alt="photo"/>
+                    </div>
                     <div class="col-lg-10"><div class="right">
                         <h4><a href="/issue/{{_id}}">{{title}}</a></h4>
                         <div class="issueShortDescription">{{description}}</div>
@@ -66,7 +68,7 @@
             <h2>Мої проблеми</h2>
             {{#each createdIssues}}
                 <div class="issueItem row">
-                    <div class="col-lg-2"></div>
+                    <div class="col-lg-2"><img src="{{media.[0]}}" width="70" height="70" alt="photo"/></div>
                     <div class="col-lg-10"><div class="right">
                         <h4><a href="/issue/{{_id}}">{{title}}</a></h4>
                         <div class="issueShortDescription">{{description}}</div>
@@ -78,7 +80,7 @@
             <h2>Мої підписки</h2>
             {{#each watchingIssues}}
                 <div class="issueItem row">
-                    <div class="col-lg-2"></div>
+                    <div class="col-lg-2"><img src="{{media.[0]}}" width="70" height="70" alt="photo"/></div>
                     <div class="col-lg-10"><div class="right">
                         <h4><a href="/issue/{{_id}}">{{title}}</a></h4>
                         <div class="issueShortDescription">{{description}}</div>

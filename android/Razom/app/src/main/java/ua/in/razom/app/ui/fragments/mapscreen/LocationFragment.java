@@ -20,11 +20,11 @@ import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.maps.Overlay;
 
 import java.util.List;
 
 import actions.NavigationAction;
+import adapters.MapInfoWindowAdapter;
 import dataobjects.Issue;
 import dataservice.Api;
 import de.greenrobot.event.EventBus;
@@ -43,7 +43,8 @@ public class LocationFragment extends Fragment implements
     private MapView mapView;
     private GoogleMap map;
     private View addPinView;
-    private List<Overlay> overlays;
+    private MapInfoWindowAdapter adapter;
+
 
     public static LocationFragment newInstance() {
         return new LocationFragment();
@@ -56,11 +57,12 @@ public class LocationFragment extends Fragment implements
         // Gets the MapView from the XML layout and creates it
         mapView = (MapView) v.findViewById(R.id.mapview);
         mapView.onCreate(savedInstanceState);
-
         // Gets to GoogleMap from the MapView and does initialization stuff
         map = mapView.getMap();
         map.getUiSettings().setMyLocationButtonEnabled(true);
         map.setMyLocationEnabled(true);
+        adapter = new MapInfoWindowAdapter(inflater);
+        map.setInfoWindowAdapter(adapter);
 
 
         // Needs to call MapsInitializer before doing any CameraUpdateFactory calls
@@ -98,6 +100,8 @@ public class LocationFragment extends Fragment implements
             @Override
             public void success(List<Issue> issues, Response response) {
                 addIssuesToMap(issues);
+                adapter.setIssues(issues);
+//                adapter.notifyAll();
             }
 
             @Override
@@ -114,7 +118,7 @@ public class LocationFragment extends Fragment implements
 
             map.addMarker(new MarkerOptions()
                     .position(new LatLng(issue.getLat(), issue.getLon()))
-                    .title(issue.getTitle())
+                    .title(issue.get_id())
                     .draggable(false)
                     .icon(BitmapDescriptorFactory.fromResource(R.drawable.pin02)));
         }

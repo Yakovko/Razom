@@ -15,4 +15,5 @@ module.exports = function(app) {
     app.get('/api/category_list', api.categoryList);
     app.get('/api/issues', api.issues);
 
+    app.get('/home/map', rootController.map);
 }

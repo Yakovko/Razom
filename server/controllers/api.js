@@ -173,7 +173,7 @@ var controller = {
         query.exec(function (err, results) {
             if (err) throw err;
 
-            console.log(results);
+            res.send(results);
         });
     }
 }

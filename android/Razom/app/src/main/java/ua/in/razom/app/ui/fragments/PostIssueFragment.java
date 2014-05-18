@@ -44,7 +44,6 @@ public class PostIssueFragment extends Fragment {
     public void onViewCreated(View view, final Bundle savedInstanceState) {
         saveUIReferences(view);
         Toast.makeText(getActivity(), "onViewCreated, lon = " + lon + ", lat = " + lat, Toast.LENGTH_SHORT).show();
-
     }
 
     @Override

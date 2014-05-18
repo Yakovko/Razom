@@ -3,6 +3,7 @@ package dataservice;
 import java.util.List;
 
 import dataobjects.Category;
+import dataobjects.Issue;
 import dataobjects.NewCommentObject;
 import dataobjects.NewIssueRequestObject;
 import dataobjects.NewIssueResponse;
@@ -37,6 +38,9 @@ public interface DataService {
 
     @GET("/api/category_list")
     void getCategoryList(Callback<List<Category>> cb);
+
+    @GET("/api/issues")
+    void getAllIssues(Callback<List<Issue>> cb);
 
 
 }

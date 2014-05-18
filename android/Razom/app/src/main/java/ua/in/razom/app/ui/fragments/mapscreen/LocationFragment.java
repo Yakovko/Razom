@@ -69,6 +69,7 @@ public class LocationFragment extends Fragment implements
             public void onInfoWindowClick(Marker marker) {
                 NavigationAction action = NavigationAction.VIEW_ISSUE;
                 action.setIssueId(marker.getTitle());
+                EventBus.getDefault().post(action);
             }
         });
 

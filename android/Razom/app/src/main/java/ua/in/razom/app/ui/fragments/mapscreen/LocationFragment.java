@@ -19,6 +19,7 @@ import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.List;
@@ -63,7 +64,14 @@ public class LocationFragment extends Fragment implements
         map.setMyLocationEnabled(true);
         adapter = new MapInfoWindowAdapter(inflater);
         map.setInfoWindowAdapter(adapter);
-
+        map.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+            @Override
+            public void onInfoWindowClick(Marker marker) {
+                NavigationAction action = NavigationAction.VIEW_ISSUE;
+                action.setIssueId(marker.getTitle());
+                EventBus.getDefault().post(action);
+            }
+        });
 
         // Needs to call MapsInitializer before doing any CameraUpdateFactory calls
         MapsInitializer.initialize(this.getActivity());
@@ -113,26 +121,30 @@ public class LocationFragment extends Fragment implements
     }
 
     private void addIssuesToMap(List<Issue> issues) {
-        for (Issue issue : issues) {
-            int icon_res_id;
-
+        int[] pins = {R.drawable.pin02, R.drawable.pin03, R.drawable.pin04, R.drawable.pin05, R.drawable.pin01};
+        for (int i = 0; i < issues.size(); i++) {
+            Issue issue = issues.get(i);
+            int pin = 0;
             map.addMarker(new MarkerOptions()
                     .position(new LatLng(issue.getLat(), issue.getLon()))
                     .title(issue.get_id())
                     .draggable(false)
-                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.pin02)));
+                    .icon(BitmapDescriptorFactory.fromResource(pins[i % pins.length])));
         }
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        mapView.onDestroy();
+        if (mapView != null)
+            mapView.onDestroy();
     }
 
     @Override
     public void onResume() {
-        mapView.onResume();
+        if (mapView != null) {
+            mapView.onResume();
+        }
 
         super.onResume();
     }
@@ -148,15 +160,16 @@ public class LocationFragment extends Fragment implements
         // Display the connection status
         Toast.makeText(getActivity(), "Connected", Toast.LENGTH_SHORT).show();
         Location currentLocation = locationClient.getLastLocation();
-        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()), 15);
-        map.animateCamera(cameraUpdate);
+        if (currentLocation != null) {
+            CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()), 15);
+            map.animateCamera(cameraUpdate);
+        }
     }
 
     @Override
     public void onDisconnected() {
         // Display the connection status
-        Toast.makeText(getActivity(), "Disconnected. Please re-connect.",
-                Toast.LENGTH_SHORT).show();
+
     }
 
     @Override

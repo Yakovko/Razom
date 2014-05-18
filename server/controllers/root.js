@@ -43,9 +43,9 @@ var controller = {
         //1 data about issue
         var id = req.params.id;
 
+
         IssueModel.getById(id, function(err, issue){
             if(err){
-                console.log(err)
                 return n(new HttpError("50X", "Server error"));
             }
 
@@ -54,19 +54,19 @@ var controller = {
             }
 
             CategoryModel.getById(issue.category, function(err, category){
-                if(err){
-                    console.log(err)
-                    return n(new HttpError("50X", "Server error"));
-                }
 
                 if(!category){
                     category = {name: 'Default'};
                 }
 
-                res.render('issue', {
-                    issue:issue,
-                    category: category
-                });
+                IssueModel.find({}, function(err, issues){
+                    res.render('issue', {
+                        issue:issue,
+                        category: category,
+                        issues: issues
+                    });
+                })
+
             });
 
 

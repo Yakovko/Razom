@@ -21,10 +21,15 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import datamodels.IssuesCategory;
+import actions.NavigationAction;
+import dataobjects.Issue;
+import dataservice.Api;
+import de.greenrobot.event.EventBus;
+import retrofit.Callback;
+import retrofit.RetrofitError;
+import retrofit.client.Response;
 import ua.in.razom.app.R;
 
 public class LocationFragment extends Fragment implements
@@ -33,9 +38,10 @@ public class LocationFragment extends Fragment implements
 
 
     private static final int CONNECTION_FAILURE_RESOLUTION_REQUEST = 9000;
-    LocationClient locationClient;
-    MapView mapView;
-    GoogleMap map;
+    private LocationClient locationClient;
+    private MapView mapView;
+    private GoogleMap map;
+    private View addPinView;
 
     public static LocationFragment newInstance() {
         return new LocationFragment();
@@ -58,39 +64,71 @@ public class LocationFragment extends Fragment implements
         // Needs to call MapsInitializer before doing any CameraUpdateFactory calls
         MapsInitializer.initialize(this.getActivity());
 
+        addPinView = v.findViewById(R.id.add_marker);
 
         // Updates the location and zoom of the MapView
         locationClient = new LocationClient(getActivity(), this, this);
         locationClient.connect();
 
-        addMarkers();
+        requestMarkers();
+
+        setListeners();
         return v;
     }
 
-    private void addMarkers() {
-        List<Issue> issues = getIssuesStub();
-        for (Issue issue : issues) {
-            int icon_res_id;
-            switch (issue.category) {
-                case COMMON:
-                    icon_res_id = R.drawable.pin02;
-                    break;
-                case ECOLOGY:
-                    icon_res_id = R.drawable.pin03;
-                    break;
-                case STUFF:
-                    icon_res_id = R.drawable.pin04;
-                    break;
-                case TRANSPORT:
-                default:
-                    icon_res_id = R.drawable.pin05;
+    private void setListeners() {
+        addPinView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (locationClient.isConnected()) {
+                    Location curLoc = locationClient.getLastLocation();
+                    NavigationAction action = NavigationAction.POST_ISSUE;
+                    action.setLon(curLoc.getLongitude());
+                    action.setLat(curLoc.getLatitude());
+                    EventBus.getDefault().post(action);
+                }
+            }
+        });
+    }
+
+    private void requestMarkers() {
+        Api.DataService.getAllIssues(new Callback<List<Issue>>() {
+            @Override
+            public void success(List<Issue> issues, Response response) {
+                addIssuesToMap(issues);
             }
 
+            @Override
+            public void failure(RetrofitError retrofitError) {
+
+            }
+        });
+
+    }
+
+    private void addIssuesToMap(List<Issue> issues) {
+        for (Issue issue : issues) {
+            int icon_res_id;
+//            switch (issue.category) {
+//                case COMMON:
+//                    icon_res_id = R.drawable.pin02;
+//                    break;
+//                case ECOLOGY:
+//                    icon_res_id = R.drawable.pin03;
+//                    break;
+//                case STUFF:
+//                    icon_res_id = R.drawable.pin04;
+//                    break;
+//                case TRANSPORT:
+//                default:
+//                    icon_res_id = R.drawable.pin05;
+//            }
+
             map.addMarker(new MarkerOptions()
-                    .position(new LatLng(issue.lat, issue.lan))
-                    .title(issue.title)
+                    .position(new LatLng(issue.getLat(), issue.getLon()))
+                    .title(issue.getTitle())
                     .draggable(false)
-                    .icon(BitmapDescriptorFactory.fromResource(icon_res_id)));
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.pin02)));
         }
     }
 
@@ -154,27 +192,27 @@ public class LocationFragment extends Fragment implements
         }
     }
 
-    private List<Issue> getIssuesStub() {
-        List<Issue> retList = new ArrayList<Issue>();
-        retList.add(new Issue(50.440595, 30.513077, "Test 1", IssuesCategory.ECOLOGY));
-        retList.add(new Issue(50.44052, 30.512036, "Test 2", IssuesCategory.COMMON));
-        retList.add(new Issue(50.439222, 30.512449, "Test 3", IssuesCategory.STUFF));
-        retList.add(new Issue(50.439533, 30.514526, "Test 4", IssuesCategory.TRANSPORT));
-        return retList;
-    }
+//    private List<Issue> getIssuesStub() {
+//        List<Issue> retList = new ArrayList<Issue>();
+//        retList.add(new Issue(50.440595, 30.513077, "Test 1", IssuesCategory.ECOLOGY));
+//        retList.add(new Issue(50.44052, 30.512036, "Test 2", IssuesCategory.COMMON));
+//        retList.add(new Issue(50.439222, 30.512449, "Test 3", IssuesCategory.STUFF));
+//        retList.add(new Issue(50.439533, 30.514526, "Test 4", IssuesCategory.TRANSPORT));
+//        return retList;
+//    }
 
-    private class Issue {
-        public double lan;
-        public double lat;
-        public String title;
-        public IssuesCategory category;
-
-        private Issue(double lat, double lan, String title, IssuesCategory category) {
-            this.lan = lan;
-            this.lat = lat;
-            this.title = title;
-            this.category = category;
-        }
-
-    }
+//    private class Issue {
+//        public double lan;
+//        public double lat;
+//        public String title;
+//        public IssuesCategory category;
+//
+//        private Issue(double lat, double lan, String title, IssuesCategory category) {
+//            this.lan = lan;
+//            this.lat = lat;
+//            this.title = title;
+//            this.category = category;
+//        }
+//
+//    }
 }

@@ -8,15 +8,24 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import actions.NavigationAction;
+import dataobjects.Category;
 import dataservice.Api;
 import de.greenrobot.event.EventBus;
+import retrofit.Callback;
+import retrofit.RetrofitError;
+import retrofit.client.Response;
 import ua.in.razom.app.R;
 import ua.in.razom.app.ui.fragments.PostIssueFragment;
 import ua.in.razom.app.ui.fragments.ProfileFragment;
+import ua.in.razom.app.ui.fragments.mapscreen.LocationFragment;
 
 public class MainNavigationActivity extends ActionBarActivity {
 
+    public List<Category> categories;
     private ActionBar actionBar;
 
     @Override
@@ -24,16 +33,44 @@ public class MainNavigationActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
         initActionBar();
-        showFragment(PostIssueFragment.newInstance(), false);
+        showFragment(LocationFragment.newInstance(), false);
         Api.InitDataService();
+        categories = new ArrayList<Category>();
+        requestCategories();
+//        requestIssues();
     }
 
+    private void requestCategories() {
+        Api.DataService.getCategoryList(new Callback<List<Category>>() {
+            @Override
+            public void success(List<Category> categories, Response response) {
+                MainNavigationActivity.this.categories = categories;
+            }
+
+            @Override
+            public void failure(RetrofitError retrofitError) {
+            }
+        });
+    }
+
+    //    private void requestIssues() {
+//        Api.DataService.getCategoryList(new Callback<List<Category>>() {
+//            @Override
+//            public void success(List<Category> categories, Response response) {
+//                MainNavigationActivity.this.categories = categories;
+//            }
+//
+//            @Override
+//            public void failure(RetrofitError retrofitError) {
+//                Toast.makeText(MainNavigationActivity.this, "Fail to retrieve categories. " + retrofitError.getResponse().getReason(),
+//                        Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//    }
     private void initActionBar() {
         actionBar = getSupportActionBar();
         actionBar.hide();
-//        actionBar.setHomeButtonEnabled(true);
-//        actionBar.setDisplayShowTitleEnabled(true);
-//        actionBar.setPinIcon(R.drawable.logo_t2);
+
 
     }
 
@@ -90,7 +127,10 @@ public class MainNavigationActivity extends ActionBarActivity {
     public void onEvent(NavigationAction action) {
         switch (action) {
             case POST_ISSUE:
-                showFragment(PostIssueFragment.newInstance(), true);
+                Bundle bundle = new Bundle();
+                bundle.putDouble(PostIssueFragment.LATITUDE, action.getLat());
+                bundle.putDouble(PostIssueFragment.LONGITUDE, action.getLon());
+                showFragment(PostIssueFragment.newInstance(bundle), true);
                 break;
             case PROFILE:
                 showFragment(ProfileFragment.newInstance(), true);

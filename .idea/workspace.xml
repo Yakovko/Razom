@@ -2,10 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d77a642-3a71-4566-b1a4-facc316c0f9b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Razom_node_modules.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Razom_node_modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/tools/ScalingHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/drawable/place_pin02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/drawable/place_pin03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataobjects/Comment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataobjects/Issue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/TestApiFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/edit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/edit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/style/style.css" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\web\index.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/.gitignore" afterPath="$PROJECT_DIR$/android/Razom/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataservice/DataService.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataservice/DataService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/mapscreen/LocationFragment.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/mapscreen/LocationFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/MainNavigationActivity.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/MainNavigationActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/actions/NavigationAction.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/actions/NavigationAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataobjects/NewIssueRequestObject.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataobjects/NewIssueRequestObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/PostIssueFragment.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/PostIssueFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/api.js" afterPath="$PROJECT_DIR$/server/controllers/api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/fragment_location.xml" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/fragment_location.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/gradle.properties" afterPath="$PROJECT_DIR$/android/Razom/gradle.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/index.hbs" afterPath="$PROJECT_DIR$/server/views/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/public/less/site-layout.less" afterPath="$PROJECT_DIR$/server/public/less/site-layout.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/layouts/main.hbs" afterPath="$PROJECT_DIR$/server/views/layouts/main.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/.idea/misc.xml" afterPath="$PROJECT_DIR$/android/Razom/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/proguard-rules.txt" afterPath="$PROJECT_DIR$/android/Razom/app/proguard-rules.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/public/style.css" afterPath="$PROJECT_DIR$/server/public/style.css" />
     </list>
     <ignored path="Razom.iws" />
@@ -55,7 +82,7 @@
       <file leaf-file-name="index.hbs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="6" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
+            <state line="44" column="6" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -64,10 +91,8 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/public/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="36" selection-start="115240" selection-end="115240" vertical-scroll-proportion="0.47962382">
-              <folding>
-                <element signature="e#113281#114200#2" expanded="true" />
-              </folding>
+            <state line="8" column="21" selection-start="114971" selection-end="114971" vertical-scroll-proportion="0.41379312">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -436,9 +461,7 @@
     <entry file="file://$PROJECT_DIR$/server/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="91" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#113281#114200#2" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -484,17 +507,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/views/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
+        <state line="44" column="6" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="36" selection-start="115240" selection-end="115240" vertical-scroll-proportion="0.47962382">
-          <folding>
-            <element signature="e#113281#114200#2" expanded="true" />
-          </folding>
+        <state line="8" column="21" selection-start="114971" selection-end="114971" vertical-scroll-proportion="0.41379312">
+          <folding />
         </state>
       </provider>
     </entry>

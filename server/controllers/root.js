@@ -3,7 +3,7 @@ var userId = 'fw4gg6hge5y6h56hh';
 var config = require('config')
     , HttpError = require('error').HttpError
     , IssueModel = require('models/issue/issue')
-    , CategoryModel = require('models/category/category'),
+    , CategoryModel = require('models/category/category')
     , _ = require('underscore'),
     api = require('../controllers/api');
 

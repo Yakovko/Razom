@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d77a642-3a71-4566-b1a4-facc316c0f9b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/Logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/socials.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/drawable/textedit_bg.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/drawable/upload_pic_icon01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/adapters/MapInfoWindowAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/map_balloon.xml" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\app\src\main\java\ua\in\razom\app\ui\baloons\BaloonItemizedOverlay.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\app\src\main\java\ua\in\razom\app\ui\baloons\BaloonOverlayView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\app\src\main\java\ua\in\razom\app\ui\baloons\CustomBaloonOverlayView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\app\src\main\java\ua\in\razom\app\ui\baloons\CustomItemizedOverlay.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\app\src\main\java\ua\in\razom\app\ui\baloons\CustomOverlayItem.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\android\Razom\app\src\main\res\layout\baloon_overlay.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\server\views\map.hbs" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataservice/DataService.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataservice/DataService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/mapscreen/LocationFragment.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/mapscreen/LocationFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/MainNavigationActivity.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/MainNavigationActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/actions/NavigationAction.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/actions/NavigationAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/PostIssueFragment.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/PostIssueFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/fragment_post_issue.xml" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/fragment_post_issue.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/index.hbs" afterPath="$PROJECT_DIR$/server/views/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/issueList.hbs" afterPath="$PROJECT_DIR$/server/views/issueList.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/layouts/main.hbs" afterPath="$PROJECT_DIR$/server/views/layouts/main.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/root.js" afterPath="$PROJECT_DIR$/server/controllers/root.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/route.js" afterPath="$PROJECT_DIR$/server/routes/route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/public/style.css" afterPath="$PROJECT_DIR$/server/public/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="7d77a642-3a71-4566-b1a4-facc316c0f9b" name="Default" comment="" />
     <ignored path="Razom.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400400895576" ignored="false" />

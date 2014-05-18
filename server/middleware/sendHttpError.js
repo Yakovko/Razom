@@ -8,13 +8,11 @@ module.exports = function(req, res, next){
                 error: error.message
             });
         }else{
-
             res.status( error.status );
             res.render('error', {
-                error: error.message
+                error: error
             });
         }
-
     }
 
     next();

@@ -10,4 +10,6 @@
     <string name="stuff_title">Stuff</string>
     <string name="transport_title">Transport</string>
 
+    <string name="current_location" formatted="false">Your location: Lat - %s, Lon - %s</string>
+
 </resources>

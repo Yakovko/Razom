@@ -19,8 +19,8 @@ public class Issue {
     private int likes;
     private Comment[] comments; //Not sure what is returned
     private String resolutionDescription;
-    //  private String[] apply; //Not sure what is returned
-//  private String[] watcher; //Not sure what is returned
-    private String done;
+    private String[] apply; //Not sure what is returned
+    private String[] watcher; //Not sure what is returned
+    //    private String done;
     private int state;
 }

@@ -189,12 +189,9 @@ IssueSchema.statics.addComment = function(issueId, userId, message, cb){
         }
     }, function (err, numberAffected, raw) {
         if(err){
-            console.log(err)
             next(err);
             return false;
         }
-        console.log(numberAffected)
-        console.log('done')
         cb(null);
     });
 };

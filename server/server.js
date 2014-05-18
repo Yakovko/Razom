@@ -8,6 +8,7 @@ var express = require('express'),
     fs = require("fs");
 
 require("mongooseDb");
+var numberquery = 0;
 app.use(express.favicon());
 
 
@@ -32,6 +33,15 @@ app.configure(function() {
     app.set('view engine', '.hbs');
 });
 
+
+app.use(function(req, res, next){
+
+    numberquery += 1;
+    console.log(numberquery);
+
+    next();
+
+})
 
 app.use( require("middleware/sendHttpError") );
 

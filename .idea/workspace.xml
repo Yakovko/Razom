@@ -29,13 +29,13 @@
       <file leaf-file-name="index.hbs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35714287" vertical-offset="0" max-vertical-offset="3294">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.71428573" vertical-offset="0" max-vertical-offset="3294">
+              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
               <folding>
-                <marker date="1400445710952" expanded="false" signature="5720:5734" placeholder="..." />
-                <marker date="1400445710952" expanded="false" signature="5897:5929" placeholder="..." />
-                <marker date="1400445710952" expanded="false" signature="5943:5959" placeholder="..." />
-                <marker date="1400445710952" expanded="false" signature="6029:6046" placeholder="..." />
+                <marker date="1400445771536" expanded="false" signature="5726:5740" placeholder="..." />
+                <marker date="1400445771536" expanded="false" signature="5903:5935" placeholder="..." />
+                <marker date="1400445771536" expanded="false" signature="5949:5965" placeholder="..." />
+                <marker date="1400445771536" expanded="false" signature="6035:6052" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -283,7 +283,11 @@
       <created>1400445627837</created>
       <updated>1400445627837</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="remove adress">
+      <created>1400445737696</created>
+      <updated>1400445737696</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -329,7 +333,8 @@
     <MESSAGE value="change category" />
     <MESSAGE value="change title" />
     <MESSAGE value="add favicon&#10;add icon to map" />
-    <option name="LAST_COMMIT_MESSAGE" value="add favicon&#10;add icon to map" />
+    <MESSAGE value="remove adress" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove adress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -733,13 +738,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/views/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35714287" vertical-offset="0" max-vertical-offset="3294">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.71428573" vertical-offset="0" max-vertical-offset="3294">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           <folding>
-            <marker date="1400445710952" expanded="false" signature="5720:5734" placeholder="..." />
-            <marker date="1400445710952" expanded="false" signature="5897:5929" placeholder="..." />
-            <marker date="1400445710952" expanded="false" signature="5943:5959" placeholder="..." />
-            <marker date="1400445710952" expanded="false" signature="6029:6046" placeholder="..." />
+            <marker date="1400445771536" expanded="false" signature="5726:5740" placeholder="..." />
+            <marker date="1400445771536" expanded="false" signature="5903:5935" placeholder="..." />
+            <marker date="1400445771536" expanded="false" signature="5949:5965" placeholder="..." />
+            <marker date="1400445771536" expanded="false" signature="6035:6052" placeholder="..." />
           </folding>
         </state>
       </provider>

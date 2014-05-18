@@ -20,6 +20,7 @@ import retrofit.RetrofitError;
 import retrofit.client.Response;
 import ua.in.razom.app.R;
 import ua.in.razom.app.ui.fragments.PostIssueFragment;
+import ua.in.razom.app.ui.fragments.mapscreen.IssueWebViewFragment;
 import ua.in.razom.app.ui.fragments.mapscreen.LocationFragment;
 
 public class MainNavigationActivity extends ActionBarActivity {
@@ -134,7 +135,9 @@ public class MainNavigationActivity extends ActionBarActivity {
             case MAP:
                 showFragment(LocationFragment.newInstance(), true);
                 break;
-
+            case VIEW_ISSUE:
+                showFragment(IssueWebViewFragment.newInstance(action.getIssueId()), true);
+                break;
 
         }
     }

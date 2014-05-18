@@ -28,9 +28,11 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import actions.NavigationAction;
 import dataobjects.NewIssueRequestObject;
 import dataobjects.NewIssueResponse;
 import dataservice.Api;
+import de.greenrobot.event.EventBus;
 import retrofit.Callback;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
@@ -95,6 +97,7 @@ public class PostIssueFragment extends Fragment {
             public void onClick(View view) {
                 if (selectedImageUri != null) {
                     submitIssue();
+
                 }
             }
         });
@@ -134,6 +137,7 @@ public class PostIssueFragment extends Fragment {
             @Override
             public void success(NewIssueResponse newIssueResponse, Response response) {
                 Toast.makeText(getActivity(), "Issue created", Toast.LENGTH_SHORT).show();
+                closeFragment();
             }
 
             @Override
@@ -142,6 +146,10 @@ public class PostIssueFragment extends Fragment {
                 Toast.makeText(getActivity(), "Issue failed", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void closeFragment() {
+        EventBus.getDefault().post(NavigationAction.MAP);
     }
 
     private void showLocation() {

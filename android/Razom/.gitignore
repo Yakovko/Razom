@@ -12,7 +12,7 @@
 bin/
 gen/
 
-# Local configuration file (sdk path, etc)
+# Local configuration media (sdk path, etc)
 local.properties
 
 # Windows thumbnail db

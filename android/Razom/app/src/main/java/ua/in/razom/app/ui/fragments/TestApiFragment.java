@@ -57,7 +57,7 @@ public class TestApiFragment extends Fragment {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         scaledBitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
         byte[] b = baos.toByteArray();
-        String image = Base64.encodeToString(b, Base64.NO_WRAP);
+        String image = "data:image/jpeg;base64," + Base64.encodeToString(b, Base64.NO_WRAP);
         newIssue.setMedia(new String[]{image});
         Api.DataService.createIssue(newIssue, new Callback<NewIssueResponse>() {
             @Override

@@ -24,7 +24,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.util.ArrayList;
 import java.util.List;
 
+import actions.NavigationAction;
 import datamodels.IssuesCategory;
+import de.greenrobot.event.EventBus;
 import ua.in.razom.app.R;
 
 public class LocationFragment extends Fragment implements
@@ -33,9 +35,10 @@ public class LocationFragment extends Fragment implements
 
 
     private static final int CONNECTION_FAILURE_RESOLUTION_REQUEST = 9000;
-    LocationClient locationClient;
-    MapView mapView;
-    GoogleMap map;
+    private LocationClient locationClient;
+    private MapView mapView;
+    private GoogleMap map;
+    private View addPinView;
 
     public static LocationFragment newInstance() {
         return new LocationFragment();
@@ -58,13 +61,31 @@ public class LocationFragment extends Fragment implements
         // Needs to call MapsInitializer before doing any CameraUpdateFactory calls
         MapsInitializer.initialize(this.getActivity());
 
+        addPinView = v.findViewById(R.id.add_marker);
 
         // Updates the location and zoom of the MapView
         locationClient = new LocationClient(getActivity(), this, this);
         locationClient.connect();
 
         addMarkers();
+
+        setListeners();
         return v;
+    }
+
+    private void setListeners() {
+        addPinView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (locationClient.isConnected()) {
+                    Location curLoc = locationClient.getLastLocation();
+                    NavigationAction action = NavigationAction.POST_ISSUE;
+                    action.setLon(curLoc.getLongitude());
+                    action.setLat(curLoc.getLatitude());
+                    EventBus.getDefault().post(action);
+                }
+            }
+        });
     }
 
     private void addMarkers() {

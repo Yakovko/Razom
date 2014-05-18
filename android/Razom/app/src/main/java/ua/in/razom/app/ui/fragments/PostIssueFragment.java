@@ -6,18 +6,33 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.Toast;
 
 import ua.in.razom.app.R;
 
 public class PostIssueFragment extends Fragment {
-
-    private Button postIssueBtn;
-    private Button viewIssueBtn;
-    private Button profileBtn;
+    public final static String LONGITUDE = "LONG";
+    public final static String LATITUDE = "LAT";
+    private double lon;
+    private double lat;
 
     public static PostIssueFragment newInstance() {
         return new PostIssueFragment();
+    }
+
+    public static PostIssueFragment newInstance(Bundle args) {
+        PostIssueFragment fragment = new PostIssueFragment();
+        if (args != null) {
+            fragment.setArguments(args);
+        }
+        return fragment;
+    }
+
+    @Override
+    public void setArguments(Bundle args) {
+        super.setArguments(args);
+        lon = args.getDouble(LONGITUDE);
+        lat = args.getDouble(LATITUDE);
     }
 
     @Override
@@ -28,6 +43,7 @@ public class PostIssueFragment extends Fragment {
     @Override
     public void onViewCreated(View view, final Bundle savedInstanceState) {
         saveUIReferences(view);
+        Toast.makeText(getActivity(), "onViewCreated, lon = " + lon + ", lat = " + lat, Toast.LENGTH_SHORT).show();
 
     }
 
@@ -43,9 +59,6 @@ public class PostIssueFragment extends Fragment {
 
 
     private void saveUIReferences(View view) {
-        postIssueBtn = (Button) view.findViewById(R.id.post_issue_btn);
-        viewIssueBtn = (Button) view.findViewById(R.id.view_issue_btn);
-        profileBtn = (Button) view.findViewById(R.id.profile_btn);
     }
 
 

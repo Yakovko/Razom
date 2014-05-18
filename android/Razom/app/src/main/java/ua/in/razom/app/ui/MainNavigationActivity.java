@@ -125,9 +125,10 @@ public class MainNavigationActivity extends ActionBarActivity {
 
 
     public void onEvent(NavigationAction action) {
+        Bundle bundle;
         switch (action) {
             case POST_ISSUE:
-                Bundle bundle = new Bundle();
+                bundle = new Bundle();
                 bundle.putDouble(PostIssueFragment.LATITUDE, action.getLat());
                 bundle.putDouble(PostIssueFragment.LONGITUDE, action.getLon());
                 showFragment(PostIssueFragment.newInstance(bundle), true);
@@ -136,6 +137,8 @@ public class MainNavigationActivity extends ActionBarActivity {
                 showFragment(LocationFragment.newInstance(), true);
                 break;
             case VIEW_ISSUE:
+                bundle = new Bundle();
+                bundle.putString(IssueWebViewFragment.ARG_ISSUEID,action.getIssueId());
                 showFragment(IssueWebViewFragment.newInstance(action.getIssueId()), true);
                 break;
 

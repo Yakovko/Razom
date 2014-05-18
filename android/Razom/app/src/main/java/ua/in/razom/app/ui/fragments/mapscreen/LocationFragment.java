@@ -136,12 +136,15 @@ public class LocationFragment extends Fragment implements
     @Override
     public void onDestroy() {
         super.onDestroy();
-        mapView.onDestroy();
+        if (mapView != null)
+            mapView.onDestroy();
     }
 
     @Override
     public void onResume() {
-        mapView.onResume();
+        if (mapView != null) {
+            mapView.onResume();
+        }
 
         super.onResume();
     }

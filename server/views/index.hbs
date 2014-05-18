@@ -18,7 +18,7 @@
             <div class="col-lg-6">
                 <p class="block-title"> Є час й надхнення допомогти?</p>
                 <p class="second-line">Долучайся до реалізації <br/> поліпшень</p>
-                <a href="#" class="btn btn-success "><i class="fa fa-mail-forward"></i> Заходь </a>
+                <a href="/issues" class="btn btn-success "><i class="fa fa-mail-forward"></i> Заходь </a>
             </div>
         </div>
 
@@ -143,11 +143,18 @@
             $.get("api/issues?lon=" + position.coords.longitude + "&lat=" + position.coords.latitude + "&radius=" + 500, function(data) {
                 for(var i = 0; i < data.length; i++) {
                     var issue = data[i];
-console.log(issue._id);
+
+                    var issueId = (issue._id) + "";
+
                     var contentString = '<div style="padding: 10px;">' +
                             '<img style="width: 80px; height: 80px; float:left;;" src="' + issue.media[0] + '"/>' +
                             '<div style="float: right; margin-left: 10px;"><div style="font-size: 18px;">'+ issue.title +'</div>' +
-                            '<div style="margin-top: 10px;">' + issue.description + '</div></div></div>';
+                            '<div style="margin-top: 10px;">' +
+                            issue.description +
+                            '<br/><br/><a href="issue/' +
+                            issueId +
+                            '" class="pull-right">Детальніше</a>' +
+                            '</div></div></div>';
                     var infoWindow = new google.maps.InfoWindow({
                         content: contentString,
                         maxWidth: '400px'

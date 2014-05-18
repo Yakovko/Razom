@@ -226,6 +226,10 @@ body{
 .row{
     margin: 5px 0 10px 0
 }
+.chat .messages{
+    max-height: 500px;
+    overflow: auto;
+}
 .chat .messages li {
     list-style: none;
     background: white;
@@ -233,8 +237,6 @@ body{
     margin: 10px 0;
     line-height: 16px;
 }
-
-
 
 .b-sosials {
     margin-top: 20px;

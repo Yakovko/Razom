@@ -40,7 +40,6 @@ var controller = {
         //1 data about issue
         var id = req.params.id;
 
-
         IssueModel.getById(id, function(err, issue){
             if(err){
                 return n(new HttpError("50X", "Server error"));
@@ -71,6 +70,9 @@ var controller = {
         });
 
 
+    },
+    addIssue: function(req,res, n){
+        res.render('addIssue', {});
     }
 }
 module.exports = controller;

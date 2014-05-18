@@ -52,23 +52,14 @@
                         <div><h4>Чат</h4></div>
                         <div class="messages">
                             <ul>
-                                <li>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                </li>
-                                <li>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                </li>
+                                {{#each issue.comments}}
+                                    {{#if this.message }}
+                                        <li>{{this.message}}</li>
+                                    {{/if}}
+                                {{/each}}
                             </ul>
                         </div>
-                        <form class="form-horizontal">
-                            <fieldset>
-                                <div class="form-group">
-                                    <div class="col-lg-10">
-                                        <input type="text" placeholder="Повідомлення" id="inputEmail" class="form-control">
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
+                        <input type="text" placeholder="Повідомлення" id="inputEmail" class="form-control">
                         <div class="btn btn-primary btn-xs" id="source-button" style="display: none;">&lt; &gt;</div></div>
                 </div>
             </div>
@@ -87,3 +78,39 @@
         </div>
     </div>
 </div>
+
+<script>
+    var issueId = "{{issue.id}}";
+</script>
+<script>
+    var input = $('#inputEmail');
+    var messages = $('.messages');
+    var value = null;
+    input.on('keyup', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        if(e.keyCode != 13) return;
+        value = input.val();
+        if(value.length == 0) return false;
+
+        $.ajax({
+            type: "post",
+            url: "/api/issue/comment/add",
+            data: {
+                issueId: issueId,
+                userId: "1234",
+                message: value
+            },
+            success: function(){
+                messages.find('ul').append("<li>"+value+"</li>");
+                value = null;
+                input.val('');
+            },
+            error: function(){
+                value = null;
+            }
+        })
+        return false;
+
+    })
+</script>

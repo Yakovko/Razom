@@ -5,6 +5,10 @@ module.exports = function(app) {
     //static
     app.get('/', rootController.home);
     app.get('/issue/:id', rootController.issue);
+    app.get('/issue/add', rootController.addIssue);
+
+
+
     app.post('/api/issue/create', api.createIssue);
     app.post('/api/issue/watch', api.watch);
     app.post('/api/issue/unwatch', api.unwatch);

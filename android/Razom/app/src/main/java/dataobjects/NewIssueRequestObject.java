@@ -3,7 +3,7 @@ package dataobjects;
 /**
  * Created by ykomasyuk on 17.05.2014.
  */
-public class NewIssueObject {
+public class NewIssueRequestObject {
     private String title;
     private String description;
     private double lat;
@@ -13,7 +13,7 @@ public class NewIssueObject {
     private String[] tags;
     private String file; //Photo attachment. Alternatively can use "TypedFile" type
 
-    public NewIssueObject() {
+    public NewIssueRequestObject() {
     }
 
     public String getTitle() {

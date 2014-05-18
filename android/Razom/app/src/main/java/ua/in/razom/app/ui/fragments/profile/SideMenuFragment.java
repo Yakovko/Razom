@@ -44,6 +44,20 @@ public class SideMenuFragment extends Fragment {
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
+
+
+        expListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
+
+            @Override
+            public boolean onGroupClick(ExpandableListView parent, View v,
+                                        int groupPosition, long id) {
+                if (groupPosition == 2 || groupPosition == 3) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        });
     }
 
 

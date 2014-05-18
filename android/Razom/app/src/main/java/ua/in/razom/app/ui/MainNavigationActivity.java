@@ -25,7 +25,7 @@ import ua.in.razom.app.ui.fragments.mapscreen.LocationFragment;
 
 public class MainNavigationActivity extends ActionBarActivity {
 
-    public List<Category> categories;
+    public static List<Category> categories;
     private ActionBar actionBar;
 
     @Override

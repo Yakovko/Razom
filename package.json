@@ -13,7 +13,6 @@
         "request": "",
         "validator": "",
 
-        "express3-handlebars": "",
-        "handlebars": ""
+        "express3-handlebars": ""
     }
 }

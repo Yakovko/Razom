@@ -64,7 +64,7 @@ public class IssueWebViewFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_issue_web_view, container, false);
         WebView issueWebView = (WebView) v.findViewById(R.id.issue_web_view);
-        issueWebView.loadUrl("http://http://razom.batros.in.ua/issue/" + mIssueId);
+        issueWebView.loadUrl("http://razom.batros.in.ua/issue/" + mIssueId);
         return v;
     }
 

@@ -8,6 +8,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import java.util.List;
+
+import dataobjects.Issue;
+import dataservice.Api;
+import retrofit.Callback;
+import retrofit.RetrofitError;
+import retrofit.client.Response;
 import ua.in.razom.app.R;
 
 public class PostIssueFragment extends Fragment {
@@ -28,7 +35,17 @@ public class PostIssueFragment extends Fragment {
     @Override
     public void onViewCreated(View view, final Bundle savedInstanceState) {
         saveUIReferences(view);
+        Api.DataService.getAllIssues(new Callback<List<Issue>>() {
+            @Override
+            public void success(List<Issue> issues, Response response) {
+                System.out.println();
+            }
 
+            @Override
+            public void failure(RetrofitError retrofitError) {
+                System.out.println();
+            }
+        });
     }
 
     @Override

@@ -13,6 +13,7 @@ import retrofit.Callback;
 import retrofit.http.Body;
 import retrofit.http.GET;
 import retrofit.http.POST;
+import retrofit.http.Query;
 
 /**
  * Created by ykomasyuk on 17.05.2014.
@@ -41,6 +42,9 @@ public interface DataService {
 
     @GET("/api/issues")
     void getAllIssues(Callback<List<Issue>> cb);
+
+    @GET("/api/issues")
+    void getIssue(@Query("id") String id, Callback<Issue> cb);
 
 
 }

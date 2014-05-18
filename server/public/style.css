@@ -76,7 +76,9 @@
   height:auto
 }
 
-
+.success-stories-section .success-stories-item:hover {
+    cursor: pointer;
+}
 .success-stories-section .success-stories-item .success-stories-img {
   height: 200px;
   background-size: cover !important;
@@ -170,6 +172,7 @@ h3 {
     background-color: #EFEFEF;
     border-radius: 5px;
     padding: 20px;
+    height: 260px;
 }
 
 
@@ -182,9 +185,8 @@ h3 {
 
 .b-big-shade {
     background: url("img/shade.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
-    padding-bottom: 60px;
-
-    margin-bottom: 80px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
 }
 
 body{
@@ -200,4 +202,18 @@ body{
     padding: 10px;
     margin: 10px 0;
     line-height: 16px;
+}
+
+
+
+.b-sosials {
+    margin-top: 20px;
+    background: url("img/socials.png");
+    float: right;
+    width: 506px;
+    height: 60px;
+}
+
+.b-sosials-inner {
+    overflow: hidden;
 }

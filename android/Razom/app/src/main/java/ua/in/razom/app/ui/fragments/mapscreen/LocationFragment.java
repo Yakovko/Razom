@@ -158,7 +158,6 @@ public class LocationFragment extends Fragment implements
     @Override
     public void onConnected(Bundle bundle) {
         // Display the connection status
-        Toast.makeText(getActivity(), "Connected", Toast.LENGTH_SHORT).show();
         Location currentLocation = locationClient.getLastLocation();
         if (currentLocation != null) {
             CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()), 15);

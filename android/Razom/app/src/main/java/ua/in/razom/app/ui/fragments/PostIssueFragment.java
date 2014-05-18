@@ -38,6 +38,7 @@ import retrofit.RetrofitError;
 import retrofit.client.Response;
 import tools.ScalingHelper;
 import ua.in.razom.app.R;
+import ua.in.razom.app.ui.MainNavigationActivity;
 
 public class PostIssueFragment extends Fragment {
     public final static String LONGITUDE = "LONG";
@@ -107,7 +108,7 @@ public class PostIssueFragment extends Fragment {
         NewIssueRequestObject newIssue = new NewIssueRequestObject();
         newIssue.setTitle(title.getText().toString());
         newIssue.setDescription(description.getText().toString());
-        newIssue.setCategory("5377b52e944ec4a4175b967a");
+        newIssue.setCategory((MainNavigationActivity.categories != null && MainNavigationActivity.categories.size() > 0) ? MainNavigationActivity.categories.get(0).get_id() : "111");
         newIssue.setUser("fw4gg6hge5y6h56hh");
         newIssue.setTags(new String[]{"#YASHA", "#duRak"});
         newIssue.setLat(lat + Math.random() * 0.02 - 0.01);

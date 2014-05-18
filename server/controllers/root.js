@@ -50,6 +50,7 @@ var controller = {
                 return n(new HttpError(404, "Cannot find issue"));
             }
 
+            console.log(issue.category)
             CategoryModel.getById(issue.category, function(err, category){
 
                 if(!category){

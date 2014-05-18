@@ -24,6 +24,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.util.List;
 
 import actions.NavigationAction;
+import adapters.MapInfoWindowAdapter;
 import dataobjects.Issue;
 import dataservice.Api;
 import de.greenrobot.event.EventBus;
@@ -58,7 +59,7 @@ public class LocationFragment extends Fragment implements
         map = mapView.getMap();
         map.getUiSettings().setMyLocationButtonEnabled(true);
         map.setMyLocationEnabled(true);
-        //map.setInfoWindowAdapter(new MapInfoWindowAdapter(inflater));
+        map.setInfoWindowAdapter(new MapInfoWindowAdapter(inflater));
 
 
         // Needs to call MapsInitializer before doing any CameraUpdateFactory calls

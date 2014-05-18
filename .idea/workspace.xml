@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d77a642-3a71-4566-b1a4-facc316c0f9b" name="Default" comment="add">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/app_logo.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/pins/pin01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/pins/pin02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/pins/pin03.1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/pins/pin03.2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/pins/pin03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/pins/pin04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/pins/pin05.png" />
+    <list default="true" id="7d77a642-3a71-4566-b1a4-facc316c0f9b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/index.hbs" afterPath="$PROJECT_DIR$/server/views/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/layouts/main.hbs" afterPath="$PROJECT_DIR$/server/views/layouts/main.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Razom.iws" />
@@ -34,7 +25,23 @@
     <favorites_list name="Razom" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.hbs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/views/index.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.35714287" vertical-offset="0" max-vertical-offset="3294">
+              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+              <folding>
+                <marker date="1400445710952" expanded="false" signature="5720:5734" placeholder="..." />
+                <marker date="1400445710952" expanded="false" signature="5897:5929" placeholder="..." />
+                <marker date="1400445710952" expanded="false" signature="5943:5959" placeholder="..." />
+                <marker date="1400445710952" expanded="false" signature="6029:6046" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -61,8 +68,8 @@
         <option value="$PROJECT_DIR$/data/start home server" />
         <option value="$PROJECT_DIR$/server/init/allcategoryToSocial.js" />
         <option value="$PROJECT_DIR$/server/controllers/root.js" />
-        <option value="$PROJECT_DIR$/server/views/index.hbs" />
         <option value="$PROJECT_DIR$/server/views/layouts/main.hbs" />
+        <option value="$PROJECT_DIR$/server/views/index.hbs" />
       </list>
     </option>
   </component>
@@ -146,28 +153,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Razom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Razom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,23 +279,27 @@
       <created>1400445082178</created>
       <updated>1400445082178</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add favicon&#10;add icon to map">
+      <created>1400445627837</created>
+      <updated>1400445627837</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1342" height="743" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25597015" sideWeight="0.6695958" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25597015" sideWeight="0.6695958" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5092308" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5092308" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -339,7 +328,8 @@
     </option>
     <MESSAGE value="change category" />
     <MESSAGE value="change title" />
-    <option name="LAST_COMMIT_MESSAGE" value="change title" />
+    <MESSAGE value="add favicon&#10;add icon to map" />
+    <option name="LAST_COMMIT_MESSAGE" value="add favicon&#10;add icon to map" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -725,19 +715,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.135506" vertical-offset="2621" max-vertical-offset="3312">
-          <caret line="150" column="32" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="32" />
-          <folding>
-            <marker date="1400445448996" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1400445448996" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1400445448996" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1400445448996" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1458">
@@ -751,6 +728,19 @@
         <state vertical-scroll-proportion="0.2161235" vertical-offset="108" max-vertical-offset="1170">
           <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35714287" vertical-offset="0" max-vertical-offset="3294">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding>
+            <marker date="1400445710952" expanded="false" signature="5720:5734" placeholder="..." />
+            <marker date="1400445710952" expanded="false" signature="5897:5929" placeholder="..." />
+            <marker date="1400445710952" expanded="false" signature="5943:5959" placeholder="..." />
+            <marker date="1400445710952" expanded="false" signature="6029:6046" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

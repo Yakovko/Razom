@@ -1,0 +1,31 @@
+/*----Extra classes-----*/
+* {
+  margin: 0;
+  padding: 0;
+}
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+.list-style-none {
+  list-style: none;
+  padding-left: 0;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+/*----Extra classes end-----*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}

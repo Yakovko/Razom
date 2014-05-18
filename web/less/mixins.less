@@ -1,0 +1,90 @@
+.border-radius (@radius) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+.text-shadow (@arguments) {
+    -moz-text-shadow: (@arguments);
+    -webkit-text-shadow: (@arguments);
+    text-shadow: (@arguments);
+}
+.box-sizing (@arguments) {
+    -moz-box-sizing: (@arguments);
+    -webkit-box-sizing: (@arguments);
+    box-sizing: (@arguments);
+}
+
+.border-custom-color (@border-color) {
+    border: 1px solid @border-color;
+}
+
+
+.box-shadow(@arguments) { // box-shadow
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+.word-wrap (@arguments) {
+    -ms-word-wrap: (@arguments);
+    word-wrap: (@arguments);
+}
+.text-overflow(@arguments) {
+    -ms-text-overflow : (@arguments);
+    -o-text-overflow : (@arguments);
+    text-overflow: (@arguments);
+}
+
+
+.gradient-vertical-bottom2top(@color, @start-color, @stop-color) { // Vertical gradient, from BOTTOM to TOP
+    background: @color;
+    background: -webkit-gradient(linear,
+                                left bottom,
+                                left top,
+                                color-stop(0, @start-color),
+                                color-stop(1, @stop-color));
+    background: -webkit-linear-gradient(
+                                top, 
+                                @start-color,
+                                @stop-color);
+    background: -ms-linear-gradient(bottom,
+                                @start-color,
+                                @stop-color);
+    background: -moz-linear-gradient(center bottom,
+                                @start-color,
+                                @stop-color);
+    background: -o-linear-gradient(
+                                top, 
+                                @start-color,
+                                @stop-color);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@start-color', endColorstr='@stop-color',GradientType=0 );
+}
+
+/*----Extra classes-----*/
+* {
+    margin: 0;
+    padding: 0;
+}
+.f-left {float: left;}
+.f-right {float:right;}
+.list-style-none {
+    list-style: none;
+    padding-left: 0;
+}
+.uppercase {text-transform: uppercase;}
+
+/*----Extra classes end-----*/
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}

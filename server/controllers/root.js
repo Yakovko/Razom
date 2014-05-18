@@ -5,6 +5,9 @@ var config = require('config')
 var controller = {
     home: function(req, res, next){
         res.render('index', {});
+    },
+    map: function(req, res, next){
+        res.render('map', {});
     }
 }
 module.exports = controller;

@@ -5,4 +5,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string name="ecology_title">Ecology</string>
+    <string name="common_title">Common</string>
+    <string name="stuff_title">Stuff</string>
+    <string name="transport_title">Transport</string>
+
 </resources>

@@ -9,6 +9,7 @@
         "nconf": "",
         "async": "",
         "mongoose": "",
+        "mongodb": "",
         "request": "",
         "validator": "",
 

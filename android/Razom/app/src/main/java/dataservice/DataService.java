@@ -4,7 +4,8 @@ import java.util.List;
 
 import dataobjects.Category;
 import dataobjects.NewCommentObject;
-import dataobjects.NewIssueObject;
+import dataobjects.NewIssueRequestObject;
+import dataobjects.NewIssueResponse;
 import dataobjects.ResolutionObject;
 import dataobjects.UserIssueObject;
 import retrofit.Callback;
@@ -17,7 +18,7 @@ import retrofit.http.POST;
  */
 public interface DataService {
     @POST("/api/issue/create")
-    void createIssue(@Body NewIssueObject newIssue, Callback<NewIssueObject> cb);
+    void createIssue(@Body NewIssueRequestObject newIssue, Callback<NewIssueResponse> cb);
 
     @POST("/api/issue/watch")
     void watchIssue(@Body UserIssueObject userIssueObject, Callback<UserIssueObject> cb);

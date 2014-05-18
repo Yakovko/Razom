@@ -10,11 +10,20 @@ var express = require('express'),
 require("mongooseDb");
 app.use(express.favicon());
 
+
+var hbs = exphbs.create({
+    // Specify helpers which are only registered on this instance.
+    helpers: {
+        foo: function () { return 'FOO!'; }
+    }
+});
+
 app.configure(function() {
     app.use(express.static(__dirname + '/public/'));
     app.use(express.cookieParser());
     app.use(express.bodyParser({ keepExtensions: true, uploadDir: './tmp' }));
     app.set('views', __dirname + "/views");
+
     app.engine('.hbs', exphbs({
         extname: '.hbs',
         defaultLayout: 'main',
@@ -23,14 +32,21 @@ app.configure(function() {
     app.set('view engine', '.hbs');
 });
 
+
 app.use( require("middleware/sendHttpError") );
 
+require('libs/handlebars');
 //routing
 route(app);
 
 //404
 app.use(function(req, res, next){
-    res.render('error', { status: 404, url: req.url });
+    res.render('error', {
+        error: {
+            status: 404,
+            message: "No data"
+        }
+    });
     res.status(404);
 });
 

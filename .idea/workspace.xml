@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d77a642-3a71-4566-b1a4-facc316c0f9b" name="Default" comment="" />
+    <list default="true" id="7d77a642-3a71-4566-b1a4-facc316c0f9b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/issue_02.docx" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\.gitigone.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\server\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\server\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\server\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\server\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\server\.idea\server.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\server\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\hakaton\Razom\server\.idea\workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/issue.hbs" afterPath="$PROJECT_DIR$/server/views/issue.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/layouts/main.hbs" afterPath="$PROJECT_DIR$/server/views/layouts/main.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/root.js" afterPath="$PROJECT_DIR$/server/controllers/root.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/test/test request.js" afterPath="$PROJECT_DIR$/server/test/test request.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Razom.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400400895576" ignored="false" />
@@ -59,7 +74,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/public/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="20" selection-start="117428" selection-end="117428" vertical-scroll-proportion="0.42902207">
+            <state line="126" column="1" selection-start="117639" selection-end="117639" vertical-scroll-proportion="0.91167194">
               <folding>
                 <element signature="e#113507#114426#2" expanded="true" />
               </folding>
@@ -536,7 +551,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="20" selection-start="117428" selection-end="117428" vertical-scroll-proportion="0.42902207">
+        <state line="126" column="1" selection-start="117639" selection-end="117639" vertical-scroll-proportion="0.91167194">
           <folding>
             <element signature="e#113507#114426#2" expanded="true" />
           </folding>

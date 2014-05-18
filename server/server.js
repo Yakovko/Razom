@@ -3,9 +3,10 @@ var express = require('express'),
     route = require('routes/route'),
     http = require('http'),
     HttpError = require('error').HttpError,
-    hbs,
+    hbs = require('handlebars'),
     exphbs  = require('express3-handlebars'),
-    config = require("config");
+    config = require("config"),
+    fs = require("fs");
 
 require("mongooseDb");
 app.use(express.favicon());

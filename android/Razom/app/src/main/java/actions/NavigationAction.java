@@ -4,6 +4,7 @@ package actions;
 public enum NavigationAction {
     POST_ISSUE,
     VIEW_ISSUE,
+    MAP,
     PROFILE;
     private double lat;
     private double lon;

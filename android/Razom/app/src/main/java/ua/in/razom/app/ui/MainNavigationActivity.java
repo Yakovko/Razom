@@ -20,7 +20,6 @@ import retrofit.RetrofitError;
 import retrofit.client.Response;
 import ua.in.razom.app.R;
 import ua.in.razom.app.ui.fragments.PostIssueFragment;
-import ua.in.razom.app.ui.fragments.ProfileFragment;
 import ua.in.razom.app.ui.fragments.mapscreen.LocationFragment;
 
 public class MainNavigationActivity extends ActionBarActivity {
@@ -132,9 +131,10 @@ public class MainNavigationActivity extends ActionBarActivity {
                 bundle.putDouble(PostIssueFragment.LONGITUDE, action.getLon());
                 showFragment(PostIssueFragment.newInstance(bundle), true);
                 break;
-            case PROFILE:
-                showFragment(ProfileFragment.newInstance(), true);
+            case MAP:
+                showFragment(LocationFragment.newInstance(), true);
                 break;
+
 
         }
     }

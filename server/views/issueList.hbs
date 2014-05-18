@@ -4,31 +4,90 @@
     }
 
     .user-issue-list {
-        background: lightgray;
+        background: #eeffff;
     }
 
     .issueItem {
-        padding: 20px 5%;
+        padding: 10px;
         background: #ddeeff;
-        margin-top: 20px;
+        margin: 10px;
     }
 </style>
-<div class="main-page-wrapper container">
-    <h1>Всі проблеми</h1>
-    <div class="row row-xs-height">
-        <div class="col-lg-7 col-xs-height main-issue-list">
+<div class="main-page-wrapper">
+
+
+
+    <div class="row">
+        <div class="col col-lg-6 main-issue-list">
+            <div class="row">
+                <div class="col col-lg-8"><h1>Всі проблеми</h1></div>
+                <div class="col col-lg-4" style="padding-top: 30px;">
+                    <div class="pull-right">
+                        Зверху:
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-success">Нові</button>
+                            <button type="button" class="btn btn-sm btn-success dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Наближчі</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {{#each issues}}
                 <div class="issueItem row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-10"><div class="right">
-                        <h4><a href="#">{{title}}</a></h4>
+                        <h4><a href="/issue/{{_id}}">{{title}}</a></h4>
                         <div class="issueShortDescription">{{description}}</div>
-                        <a href="#" class="btn btn-info btn-sm pull-right">Детальніше</a>
+                        <a href="/issue/{{_id}}" class="btn btn-info btn-sm pull-right">Детальніше</a>
+                    </div>
+                    </div>
+                </div>
+            {{/each}}
+            <center>
+                <div style="margin: 0 auto;">
+                    <ul class="pagination">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+            </center>
+        </div>
+        <div class="col col-lg-6 user-issue-list">
+            <h2>Мої проблеми</h2>
+            {{#each createdIssues}}
+                <div class="issueItem row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-10"><div class="right">
+                        <h4><a href="/issue/{{_id}}">{{title}}</a></h4>
+                        <div class="issueShortDescription">{{description}}</div>
+                        <a href="/issue/{{_id}}" class="btn btn-info btn-sm pull-right">Детальніше</a>
+                    </div>
+                    </div>
+                </div>
+            {{/each}}
+            <h2>Мої підписки</h2>
+            {{#each watchingIssues}}
+                <div class="issueItem row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-10"><div class="right">
+                        <h4><a href="/issue/{{_id}}">{{title}}</a></h4>
+                        <div class="issueShortDescription">{{description}}</div>
+                        <a href="/issue/{{_id}}" class="btn btn-info btn-sm pull-right">Детальніше</a>
                     </div>
                     </div>
                 </div>
             {{/each}}
         </div>
-        <div class="col-lg-5 col-xs-height user-issue-list">afdsf</div>
     </div>
+
 </div>

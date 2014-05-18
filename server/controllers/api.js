@@ -135,7 +135,7 @@ var controller = {
 
     },
     issues: function(req, res, n) {
-        var query = controller.issuesQuery(req, res);
+        var query = controller.issuesQuery(req.query);
 
         query.exec(function (err, results) {
             if (err) throw err;
@@ -143,8 +143,9 @@ var controller = {
             res.send(results);
         });
     },
-    issuesQuery: function(req) {
-        var data = req.query;
+    issuesQuery: function(data) {
+        if(!data)
+            data = {};
         var category = data.category,
             userId = data.userId,
             state = data.status,

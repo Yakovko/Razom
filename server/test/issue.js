@@ -86,14 +86,14 @@ IssueModel.watchUser("5377b256590016f418719cc6", "watchUserId2", function(err){
  console.log('resolution_description true');
  })*/
 /*APPLY*/
-IssueModel.applyUser("5377b256590016f418719cc6", "applyUserId2", function(err){
+/*IssueModel.applyUser("5377b256590016f418719cc6", "applyUserId2", function(err){
  if(err) {
  console.log('applyUser false');
  return false;
  }
 
  console.log('applyUser done');
- })
+ })*/
 
 /*DISAPPLY*/
 /*

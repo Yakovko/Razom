@@ -163,7 +163,8 @@
                     var marker = new google.maps.Marker({
                         position: new google.maps.LatLng(issue.lat, issue.lon),
                         map: map,
-                        title: issue.title
+                        title: issue.title,
+                        icon: '/img/pins/pin03.2.png'
                     });
 
                     google.maps.event.addListener(marker, 'click', function() {

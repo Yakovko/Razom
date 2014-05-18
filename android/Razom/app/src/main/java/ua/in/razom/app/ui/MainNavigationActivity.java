@@ -34,7 +34,7 @@ public class MainNavigationActivity extends ActionBarActivity {
         actionBar.hide();
 //        actionBar.setHomeButtonEnabled(true);
 //        actionBar.setDisplayShowTitleEnabled(true);
-//        actionBar.setIcon(R.drawable.logo_t2);
+//        actionBar.setPinIcon(R.drawable.logo_t2);
 
     }
 

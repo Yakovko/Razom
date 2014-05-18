@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ecology_color">#D7DD16</color>
+    <color name="common_color">#DD2016</color>
+    <color name="stuff_color">#2616DD</color>
+    <color name="transport_color">#16DDCE</color>
+</resources>

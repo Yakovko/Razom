@@ -56,6 +56,8 @@ public class MapInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
         // Getting reference to the TextView to set longitude
         TextView title = (TextView) v.findViewById(R.id.balloon_item_title);
 
+        TextView description = (TextView) v.findViewById(R.id.balloon_item_description);
+
         Issue i = null;
         for (Issue issue : issues) {
             if (issue.get_id().equals(arg0.getTitle())) {
@@ -69,11 +71,18 @@ public class MapInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
                 encodedImage = encodedImage.substring(encodedImage.lastIndexOf("base64,") + 7);
                 byte[] decodedString = Base64.decode(encodedImage, Base64.NO_WRAP);
                 image.setImageBitmap(BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length));
+
             }
             title.setText(i.getTitle());
+            description.setText(descriptionCut(i.getDescription()));
         }
         // Returning the view containing InfoWindow contents
         return v;
 
+    }
+
+    private String descriptionCut(String description) {
+        if (description.length() < 50) return description;
+        else return description.substring(0, 50) + "...";
     }
 }

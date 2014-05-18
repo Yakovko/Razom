@@ -38,15 +38,15 @@ public class CustomItemizedOverlay<Item extends OverlayItem> extends BaloonItemi
     }
 
     @Override
-    protected boolean onBalloonTap(int index, CustomOverlayItem item) {
-        Toast.makeText(c, "onBalloonTap for overlay index " + index,
+    protected boolean onBaloonTap(int index, CustomOverlayItem item) {
+        Toast.makeText(c, "onBaloonTap for overlay index " + index,
                 Toast.LENGTH_LONG).show();
         return true;
     }
 
     @Override
-    protected BaloonOverlayView<CustomOverlayItem> createBalloonOverlayView() {
-        // use our custom balloon view with our custom overlay item type:
+    protected BaloonOverlayView<CustomOverlayItem> createBaloonOverlayView() {
+        // use our custom baloon view with our custom overlay item type:
         return new CustomBaloonOverlayView<CustomOverlayItem>(getMapView().getContext(), getBaloonBottomOffset());
     }
 

@@ -1,5 +1,7 @@
 package ua.in.razom.app.ui.baloons;
 
+import android.graphics.Bitmap;
+
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.OverlayItem;
 
@@ -15,8 +17,8 @@ public class CustomOverlayItem extends OverlayItem {
         mImageURL = imageURL;
     }
 
-    public String getImageURL() {
-        return mImageURL;
+    public Bitmap getImageBitmap() {
+        return null;
     }
 
     public void setImageURL(String imageURL) {

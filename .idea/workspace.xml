@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1ad313e-30c3-4d21-8b79-ea7b5ab3acf6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/img/404.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/baloons/BaloonOverlayView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/baloons/CustomBaloonOverlayView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/baloons/CustomItemizedOverlay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/baloons/CustomOverlayItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/baloon_overlay.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/libs/handlebars.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/views/partials/header.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/thirdparty/bootstrap-3.1.1/docs/examples/navbar/index.html~HEAD" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/thirdparty/bootstrap-3.1.1/docs/examples/navbar-fixed-top/index.html~HEAD" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/thirdparty/bootstrap-3.1.1/docs/examples/navbar-static-top/index.html~HEAD" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/views/issue.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/views/issueList.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/less/style.less~HEAD" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/drawable/text_lines.xml" />
+      <change type="DELETED" beforePath="E:\mue\Razom\.idea\Razom.iml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mue\Razom\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mue\Razom\.idea\jsLibraryMappings.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mue\Razom\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mue\Razom\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mue\Razom\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mue\Razom\android\Razom\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="E:\mue\Razom\android\Razom\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mue\Razom\android\Razom\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mue\Razom\android\Razom\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mue\Razom\android\Razom\.idea\gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mue\Razom\android\Razom\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mue\Razom\android\Razom\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mue\Razom\android\Razom\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mue\Razom\android\Razom\.idea\vcs.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/.gitignore" afterPath="$PROJECT_DIR$/android/Razom/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/.gitignore" afterPath="$PROJECT_DIR$/android/Razom/app/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/mapscreen/LocationFragment.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/mapscreen/LocationFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/PostIssueFragment.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/PostIssueFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Razom_node_modules.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Razom_node_modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/api.js" afterPath="$PROJECT_DIR$/server/controllers/api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/error.hbs" afterPath="$PROJECT_DIR$/server/views/error.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/fragment_post_issue.xml" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/fragment_post_issue.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/index.hbs" afterPath="$PROJECT_DIR$/server/views/index.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/models/issue/issue.js" afterPath="$PROJECT_DIR$/server/models/issue/issue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/test/issue.js" afterPath="$PROJECT_DIR$/server/test/issue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/layouts/main.hbs" afterPath="$PROJECT_DIR$/server/views/layouts/main.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/root.js" afterPath="$PROJECT_DIR$/server/controllers/root.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/route.js" afterPath="$PROJECT_DIR$/server/routes/route.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/middleware/sendHttpError.js" afterPath="$PROJECT_DIR$/server/middleware/sendHttpError.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/public/style.css" afterPath="$PROJECT_DIR$/server/public/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="Razom.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Razom" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/public/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+              <caret line="176" column="0" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+              <folding>
+                <element signature="e#114908#114975#0" expanded="false" />
+                <element signature="e#114991#115017#0" expanded="false" />
+                <element signature="e#115033#115076#0" expanded="false" />
+                <element signature="e#115077#115344#0" expanded="false" />
+                <element signature="e#115130#115213#0" expanded="false" />
+                <element signature="e#115233#115267#0" expanded="false" />
+                <element signature="e#115287#115342#0" expanded="false" />
+                <element signature="e#115345#115612#0" expanded="false" />
+                <element signature="e#115398#115481#0" expanded="false" />
+                <element signature="e#115501#115535#0" expanded="false" />
+                <element signature="e#115555#115610#0" expanded="false" />
+                <element signature="e#115613#115881#0" expanded="false" />
+                <element signature="e#115667#115750#0" expanded="false" />
+                <element signature="e#115770#115804#0" expanded="false" />
+                <element signature="e#115824#115879#0" expanded="false" />
+                <element signature="e#115890#115937#0" expanded="false" />
+                <element signature="e#116191#116222#0" expanded="false" />
+                <element signature="e#116270#116274#0" expanded="false" />
+                <element signature="e#116343#116400#0" expanded="false" />
+                <element signature="e#116482#116541#0" expanded="false" />
+                <element signature="e#116629#116715#0" expanded="false" />
+                <element signature="e#116797#116856#0" expanded="false" />
+                <element signature="e#116944#117030#0" expanded="false" />
+                <element signature="e#117112#117171#0" expanded="false" />
+                <element signature="e#117356#117403#0" expanded="false" />
+                <element signature="e#117423#117469#0" expanded="false" />
+                <element signature="e#117479#117526#0" expanded="false" />
+                <element signature="e#117549#117679#0" expanded="false" />
+                <element signature="e#117702#117768#0" expanded="false" />
+                <element signature="e#117783#117804#0" expanded="false" />
+                <element signature="e#117809#117922#0" expanded="false" />
+                <element signature="e#117949#118111#0" expanded="false" />
+                <element signature="e#118138#118163#0" expanded="false" />
+                <element signature="e#118194#118264#0" expanded="false" />
+                <element signature="e#118290#118367#0" expanded="false" />
+                <element signature="e#118389#118565#0" expanded="false" />
+                <element signature="e#118727#118750#0" expanded="false" />
+                <element signature="e#118756#118784#0" expanded="false" />
+                <element signature="e#118804#118914#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.hbs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/views/index.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="493">
+              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+              <folding>
+                <element signature="tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#1" expanded="false" />
+                <element signature="tag#div#1;tag#div#1" expanded="false" />
+                <element signature="tag#div#0;tag#div#1;tag#div#1" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#1;tag#div#1" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#div#1" expanded="false" />
+                <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#1" expanded="false" />
+                <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#1;tag#div#1" expanded="false" />
+                <element signature="tag#div#0;tag#div#2" expanded="false" />
+                <element signature="tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#p#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#p#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#div#0;tag#div#2;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#2;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#p#0;tag#div#0;tag#div#2;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#div#0;tag#div#3;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#3;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="tag#p#0;tag#div#0;tag#div#3;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+                <element signature="e#4123#4514#0#HTML" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.hbs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/views/layouts/main.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.70577615" vertical-offset="0" max-vertical-offset="1020">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/server/config/index.js" />
+        <option value="$PROJECT_DIR$/server/mongooseDb/index.js" />
+        <option value="$PROJECT_DIR$/server/models/issue/dtaa.js" />
+        <option value="$PROJECT_DIR$/server/models/issue/data.js" />
+        <option value="$PROJECT_DIR$/data/api.html" />
+        <option value="$PROJECT_DIR$/data/mongo.js" />
+        <option value="$PROJECT_DIR$/server/controllers/root.js" />
+        <option value="$PROJECT_DIR$/data/api.txt" />
+        <option value="$PROJECT_DIR$/server/models/category/category.js" />
+        <option value="$PROJECT_DIR$/server/init/category.js" />
+        <option value="$PROJECT_DIR$/server/init/init.js" />
+        <option value="$PROJECT_DIR$/server/config/project.json" />
+        <option value="$PROJECT_DIR$/server/routes/route.js" />
+        <option value="$PROJECT_DIR$/server/test/clear.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/server/test/issue.js" />
+        <option value="$PROJECT_DIR$/server/models/issue/issue.js" />
+        <option value="$PROJECT_DIR$/data/start home server" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/server/test/test request.js" />
+        <option value="$PROJECT_DIR$/server/controllers/api.js" />
+        <option value="$PROJECT_DIR$/server/public/style/style.css" />
+        <option value="$PROJECT_DIR$/server/public/style.css" />
+        <option value="$PROJECT_DIR$/server/views/index.hbs" />
+        <option value="$PROJECT_DIR$/server/views/layouts/main.hbs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1359" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
+    <property name="FullScreen" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="settings.nodejs" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/mue/Razom/server/controllers/root.js" />
+  </component>
+  <component name="RunManager" selected="Node.js.razom">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="false" name="razom" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server/server.js" working-dir="$PROJECT_DIR$">
+      <envs>
+        <env name="NODE_PATH" value="E:\mue\Razom\server" />
+      </envs>
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test issue" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server/test/issue.js" working-dir="$PROJECT_DIR$">
+      <envs>
+        <env name="NODE_PATH" value="E:\mue\Razom\server" />
+      </envs>
+      <RunnerSettings RunnerId="NodeJS.debug" />
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.debug" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Init" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server/init/init.js" working-dir="$PROJECT_DIR$">
+      <envs>
+        <env name="NODE_PATH" value="E:\mue\Razom\server" />
+      </envs>
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Clear" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server/test/clear.js" working-dir="$PROJECT_DIR$">
+      <envs>
+        <env name="NODE_PATH" value="E:\mue\Razom\server" />
+      </envs>
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Test request" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server/test/test request.js" working-dir="$PROJECT_DIR$">
+      <envs>
+        <env name="NODE_PATH" value="E:\mue\Razom\server" />
+      </envs>
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.razom" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.test issue" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.Init" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.Clear" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.Test request" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1ad313e-30c3-4d21-8b79-ea7b5ab3acf6" name="Default" comment="" />
+      <created>1400325114015</created>
+      <updated>1400325114015</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add server 1">
+      <created>1400328385307</created>
+      <updated>1400328385307</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init server">
+      <created>1400330094257</created>
+      <updated>1400330094257</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add api and model">
+      <created>1400334458122</created>
+      <updated>1400334458122</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add api watch and unwatch">
+      <created>1400340031545</created>
+      <updated>1400340031545</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add api like and resolution description">
+      <created>1400341481310</created>
+      <updated>1400341481310</updated>
+    </task>
+    <task id="LOCAL-00006" summary="merge">
+      <created>1400343782488</created>
+      <updated>1400343782488</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add init category scripts">
+      <created>1400344552194</created>
+      <updated>1400344552194</updated>
+    </task>
+    <task id="LOCAL-00008" summary="change port">
+      <created>1400346562192</created>
+      <updated>1400346562192</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add image">
+      <created>1400346906956</created>
+      <updated>1400346906956</updated>
+    </task>
+    <task id="LOCAL-00010" summary="change api get to post">
+      <created>1400349561683</created>
+      <updated>1400349561683</updated>
+    </task>
+    <task id="LOCAL-00011" summary="change geo&#10;">
+      <created>1400350936817</created>
+      <updated>1400350936817</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add category list">
+      <created>1400351050983</created>
+      <updated>1400351050983</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add category">
+      <created>1400352755894</created>
+      <updated>1400352755894</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add category">
+      <created>1400353180042</created>
+      <updated>1400353180043</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;server/test/issue.js&#10;">
+      <created>1400353247872</created>
+      <updated>1400353247872</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;server/test/issue.js&#10;remove _v">
+      <created>1400354479184</created>
+      <updated>1400354479184</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add layouts">
+      <created>1400357222069</created>
+      <updated>1400357222069</updated>
+    </task>
+    <task id="LOCAL-00018" summary="after create issue return _id">
+      <created>1400357556567</created>
+      <updated>1400357556567</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add ui">
+      <created>1400392636232</created>
+      <updated>1400392636232</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add ui">
+      <created>1400392975896</created>
+      <updated>1400392975896</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add ui 2">
+      <created>1400393320713</created>
+      <updated>1400393320713</updated>
+    </task>
+    <task id="LOCAL-00022" summary="home page - headings, slogan, how-tio">
+      <created>1400406649535</created>
+      <updated>1400406649535</updated>
+    </task>
+    <task id="LOCAL-00023" summary="home page - headings, slogan, how-tio">
+      <created>1400407461046</created>
+      <updated>1400407461046</updated>
+    </task>
+    <task id="LOCAL-00024" summary="home page - headings, slogan, how-tio">
+      <created>1400407690493</created>
+      <updated>1400407690493</updated>
+    </task>
+    <task id="LOCAL-00025" summary="home page - headings, slogan, how-tio">
+      <created>1400407754879</created>
+      <updated>1400407754879</updated>
+    </task>
+    <task id="LOCAL-00026" summary="home page - headings, slogan, how-tio">
+      <created>1400410527918</created>
+      <updated>1400410527918</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1359" height="728" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19731943" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51534736" sideWeight="0.5003723" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26141733" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51534736" sideWeight="0.4996277" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="add server 1" />
+    <MESSAGE value="init server" />
+    <MESSAGE value="add api and model" />
+    <MESSAGE value="add api watch and unwatch" />
+    <MESSAGE value="add api like and resolution description" />
+    <MESSAGE value="merge" />
+    <MESSAGE value="add init category scripts" />
+    <MESSAGE value="change port" />
+    <MESSAGE value="add image" />
+    <MESSAGE value="change api get to post" />
+    <MESSAGE value="change geo&#10;" />
+    <MESSAGE value="add category list" />
+    <MESSAGE value="add category" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;server/test/issue.js&#10;" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;server/test/issue.js&#10;remove _v" />
+    <MESSAGE value="add layouts" />
+    <MESSAGE value="after create issue return _id" />
+    <MESSAGE value="add ui" />
+    <MESSAGE value="add ui 2" />
+    <MESSAGE value="home page - headings, slogan, how-tio" />
+    <option name="LAST_COMMIT_MESSAGE" value="home page - headings, slogan, how-tio" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/data/api.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1649">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/api.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1649">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/error/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08600337" vertical-offset="0" max-vertical-offset="593">
+          <caret line="3" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11467116" vertical-offset="0" max-vertical-offset="593">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0133333" vertical-offset="4702" max-vertical-offset="5559">
+          <caret line="290" column="25" selection-start-line="290" selection-start-column="25" selection-end-line="290" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/middleware/sendHttpError.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/mongooseDb/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5899054" vertical-offset="0" max-vertical-offset="317">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/mongo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.096121415" vertical-offset="1694" max-vertical-offset="12410">
+          <caret line="103" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="111" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/init/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23448277" vertical-offset="204" max-vertical-offset="816">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/project.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1401099" vertical-offset="0" max-vertical-offset="364">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/init/category.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55829227" vertical-offset="0" max-vertical-offset="609">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/test/clear.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5930851" vertical-offset="100" max-vertical-offset="476">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.050531916" vertical-offset="15" max-vertical-offset="391">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43714285" vertical-offset="0" max-vertical-offset="374">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/category/category.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="e#350#680#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/issue/issue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0529595" vertical-offset="306" max-vertical-offset="1173">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding>
+            <element signature="e#231#283#0" expanded="false" />
+            <element signature="e#372#427#0" expanded="false" />
+            <element signature="e#851#899#0" expanded="false" />
+            <element signature="e#915#963#0" expanded="false" />
+            <element signature="e#992#1041#0" expanded="false" />
+            <element signature="e#1054#1102#0" expanded="false" />
+            <element signature="e#1117#1165#0" expanded="false" />
+            <element signature="e#1177#1230#0" expanded="false" />
+            <element signature="e#1243#1291#0" expanded="false" />
+            <element signature="e#1445#1686#0" expanded="false" />
+            <element signature="e#1481#1543#0" expanded="false" />
+            <element signature="e#1498#1537#0" expanded="false" />
+            <element signature="e#1581#1682#0" expanded="false" />
+            <element signature="e#1598#1658#0" expanded="false" />
+            <element signature="e#1751#1992#0" expanded="false" />
+            <element signature="e#1787#1849#0" expanded="false" />
+            <element signature="e#1804#1843#0" expanded="false" />
+            <element signature="e#1887#1988#0" expanded="false" />
+            <element signature="e#1904#1964#0" expanded="false" />
+            <element signature="e#2042#2239#0" expanded="false" />
+            <element signature="e#2134#2235#0" expanded="false" />
+            <element signature="e#2151#2211#0" expanded="false" />
+            <element signature="e#2292#2607#0" expanded="false" />
+            <element signature="e#2310#2338#0" expanded="false" />
+            <element signature="e#2387#2603#0" expanded="false" />
+            <element signature="e#2406#2475#0" expanded="false" />
+            <element signature="e#2509#2549#0" expanded="false" />
+            <element signature="e#2553#2597#0" expanded="false" />
+            <element signature="e#2657#2854#0" expanded="false" />
+            <element signature="e#2749#2850#0" expanded="false" />
+            <element signature="e#2766#2826#0" expanded="false" />
+            <element signature="e#2907#3222#0" expanded="false" />
+            <element signature="e#2925#2953#0" expanded="false" />
+            <element signature="e#3002#3218#0" expanded="false" />
+            <element signature="e#3021#3090#0" expanded="false" />
+            <element signature="e#3124#3164#0" expanded="false" />
+            <element signature="e#3168#3212#0" expanded="false" />
+            <element signature="e#3290#3529#0" expanded="false" />
+            <element signature="e#3326#3386#0" expanded="false" />
+            <element signature="e#3343#3380#0" expanded="false" />
+            <element signature="e#3424#3525#0" expanded="false" />
+            <element signature="e#3441#3501#0" expanded="false" />
+            <element signature="e#3595#3834#0" expanded="false" />
+            <element signature="e#3631#3691#0" expanded="false" />
+            <element signature="e#3648#3685#0" expanded="false" />
+            <element signature="e#3729#3830#0" expanded="false" />
+            <element signature="e#3746#3806#0" expanded="false" />
+            <element signature="e#3907#4221#0" expanded="false" />
+            <element signature="e#3943#4078#0" expanded="false" />
+            <element signature="e#3960#4072#0" expanded="false" />
+            <element signature="e#3984#4062#0" expanded="false" />
+            <element signature="e#4116#4217#0" expanded="false" />
+            <element signature="e#4133#4193#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views/error.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3207547" vertical-offset="0" max-vertical-offset="583">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/test/issue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/api.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0764045" vertical-offset="0" max-vertical-offset="1649">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/start home server">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26741573" vertical-offset="0" max-vertical-offset="445">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4187192" vertical-offset="306" max-vertical-offset="1105">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/root.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="241" max-vertical-offset="1003">
+          <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
+          <folding>
+            <element signature="e#403#464#0" expanded="false" />
+            <element signature="e#558#784#0" expanded="false" />
+            <element signature="e#659#777#0" expanded="false" />
+            <element signature="e#681#742#0" expanded="false" />
+            <element signature="e#822#1050#0" expanded="false" />
+            <element signature="e#925#1043#0" expanded="false" />
+            <element signature="e#947#1008#0" expanded="false" />
+            <element signature="e#1085#1293#0" expanded="false" />
+            <element signature="e#1168#1286#0" expanded="false" />
+            <element signature="e#1190#1251#0" expanded="false" />
+            <element signature="e#1338#2145#0" expanded="false" />
+            <element signature="e#1394#2001#0" expanded="false" />
+            <element signature="e#1420#1488#0" expanded="false" />
+            <element signature="e#1521#1660#0" expanded="false" />
+            <element signature="e#1549#1613#0" expanded="false" />
+            <element signature="e#1693#1991#0" expanded="false" />
+            <element signature="e#1795#1975#0" expanded="false" />
+            <element signature="e#1824#1927#0" expanded="false" />
+            <element signature="e#2015#2138#0" expanded="false" />
+            <element signature="e#2038#2104#0" expanded="false" />
+            <element signature="e#2180#2406#0" expanded="false" />
+            <element signature="e#2281#2399#0" expanded="false" />
+            <element signature="e#2303#2364#0" expanded="false" />
+            <element signature="e#2571#2632#0" expanded="false" />
+            <element signature="e#3159#3304#0" expanded="false" />
+            <element signature="e#3180#3260#0" expanded="false" />
+            <element signature="e#3349#3533#0" expanded="false" />
+            <element signature="e#3061#3132#0" expanded="false" />
+            <element signature="e#3450#3525#0" expanded="false" />
+            <element signature="e#3180#3260#0" expanded="false" />
+            <element signature="e#3567#4763#0" expanded="false" />
+            <element signature="e#4421#4734#0" expanded="false" />
+            <marker date="1400411350014" expanded="false" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/public/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="272">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#113596#114515#2" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/test/test request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3617021" vertical-offset="0" max-vertical-offset="663">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/public/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+          <caret line="176" column="0" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+          <folding>
+            <element signature="e#114908#114975#0" expanded="false" />
+            <element signature="e#114991#115017#0" expanded="false" />
+            <element signature="e#115033#115076#0" expanded="false" />
+            <element signature="e#115077#115344#0" expanded="false" />
+            <element signature="e#115130#115213#0" expanded="false" />
+            <element signature="e#115233#115267#0" expanded="false" />
+            <element signature="e#115287#115342#0" expanded="false" />
+            <element signature="e#115345#115612#0" expanded="false" />
+            <element signature="e#115398#115481#0" expanded="false" />
+            <element signature="e#115501#115535#0" expanded="false" />
+            <element signature="e#115555#115610#0" expanded="false" />
+            <element signature="e#115613#115881#0" expanded="false" />
+            <element signature="e#115667#115750#0" expanded="false" />
+            <element signature="e#115770#115804#0" expanded="false" />
+            <element signature="e#115824#115879#0" expanded="false" />
+            <element signature="e#115890#115937#0" expanded="false" />
+            <element signature="e#116191#116222#0" expanded="false" />
+            <element signature="e#116270#116274#0" expanded="false" />
+            <element signature="e#116343#116400#0" expanded="false" />
+            <element signature="e#116482#116541#0" expanded="false" />
+            <element signature="e#116629#116715#0" expanded="false" />
+            <element signature="e#116797#116856#0" expanded="false" />
+            <element signature="e#116944#117030#0" expanded="false" />
+            <element signature="e#117112#117171#0" expanded="false" />
+            <element signature="e#117356#117403#0" expanded="false" />
+            <element signature="e#117423#117469#0" expanded="false" />
+            <element signature="e#117479#117526#0" expanded="false" />
+            <element signature="e#117549#117679#0" expanded="false" />
+            <element signature="e#117702#117768#0" expanded="false" />
+            <element signature="e#117783#117804#0" expanded="false" />
+            <element signature="e#117809#117922#0" expanded="false" />
+            <element signature="e#117949#118111#0" expanded="false" />
+            <element signature="e#118138#118163#0" expanded="false" />
+            <element signature="e#118194#118264#0" expanded="false" />
+            <element signature="e#118290#118367#0" expanded="false" />
+            <element signature="e#118389#118565#0" expanded="false" />
+            <element signature="e#118727#118750#0" expanded="false" />
+            <element signature="e#118756#118784#0" expanded="false" />
+            <element signature="e#118804#118914#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="493">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#1" expanded="false" />
+            <element signature="tag#div#1;tag#div#1" expanded="false" />
+            <element signature="tag#div#0;tag#div#1;tag#div#1" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#1;tag#div#1" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#div#1" expanded="false" />
+            <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#1" expanded="false" />
+            <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#1;tag#div#1" expanded="false" />
+            <element signature="tag#div#0;tag#div#2" expanded="false" />
+            <element signature="tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#p#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#p#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#div#0;tag#div#2;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#2;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#p#0;tag#div#0;tag#div#2;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#div#0;tag#div#3;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#3;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="tag#p#0;tag#div#0;tag#div#3;tag#div#0;tag#div#0;tag#div#1;tag#div#2" expanded="false" />
+            <element signature="e#4123#4514#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views/layouts/main.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70577615" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

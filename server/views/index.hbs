@@ -4,9 +4,8 @@
     <div class="main-page-wrapper slogan">
 
         <p class="first-line">
-            Вирішуй проблеми
+            Вирішуй проблеми Razom
         </p>
-        <h2>razom.in.ua</span></h2>
 
 
         <div class="row b-with-links">
@@ -163,7 +162,8 @@
                     var marker = new google.maps.Marker({
                         position: new google.maps.LatLng(issue.lat, issue.lon),
                         map: map,
-                        title: issue.title
+                        title: issue.title,
+                        icon: '/img/pins/pin03.2.png'
                     });
 
                     google.maps.event.addListener(marker, 'click', function() {

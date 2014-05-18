@@ -135,7 +135,17 @@ var controller = {
 
     },
     issues: function(req, res, n) {
-        var data = req.query;
+        var query = controller.issuesQuery(req.query);
+
+        query.exec(function (err, results) {
+            if (err) throw err;
+
+            res.send(results);
+        });
+    },
+    issuesQuery: function(data) {
+        if(!data)
+            data = {};
         var category = data.category,
             userId = data.userId,
             state = data.status,
@@ -170,11 +180,7 @@ var controller = {
             query.where('lat').gt(lat - radius);
         }
 
-        query.exec(function (err, results) {
-            if (err) throw err;
-
-            res.send(results);
-        });
+        return query;
     }
 }
 module.exports = controller;

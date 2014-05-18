@@ -1,7 +1,8 @@
 var config = require('config')
     , HttpError = require('error').HttpError
     , _ = require('underscore'),
-    IssueModel = require('models/issue/issue');
+    IssueModel = require('models/issue/issue'),
+    CategoryModel = require('models/category/category');
 
 var controller = {
     createIssue: function(req, res, n) {
@@ -14,7 +15,7 @@ var controller = {
                 return n(new HttpError(err));
             }
 
-            res.send(issue);
+            res.send({_id: issue._id});
         })
     },
 
@@ -118,7 +119,62 @@ var controller = {
             res.send();
         })
     },
+    categoryList: function(req, res, n) {
+        var data = req.body;
 
-    categoryList: function(){}
+        CategoryModel.find({}, {
+            _v: -1,
+            name: 1,
+            _id: 1
+        }, function(err, categories){
+            if(err){
+                return next(new HttpError(400, "Server error"));
+            }
+            res.send(categories);
+        });
+
+    },
+    issues: function(req, res, n) {
+        var data = req.query;
+        var category = data.category,
+            userId = data.userId,
+            state = data.status,
+            apply = data.apply,
+            watcher = data.watcher,
+            id = data.id,
+            lon = data.lon,
+            lat = data.lat,
+            radius = data.radius;
+        var query = IssueModel.find({});
+
+        if(category)
+            query.where('category').equals(category);
+        if(userId)
+            query.where('userId').equals(userId);
+        if(state)
+            query.where('state').equals(state);
+        if(apply)
+            query.where('apply').equals(apply);
+        if(watcher)
+            query.where('watcher').equals(watcher);
+        if(id)
+            query.where('_id').equals(id);
+        if(lon != undefined &&  lat  != undefined && radius != undefined) {
+            lon = parseInt(lon);
+            lat = parseInt(lat);
+            radius = parseInt(radius);
+
+            query.where('lon').lt(lon + radius);
+            query.where('lon').gt(lon - radius);
+            query.where('lat').lt(lat + radius);
+            query.where('lat').gt(lat - radius);
+        }
+
+        query.exec(function (err, results) {
+            if (err) throw err;
+
+            console.log(results);
+        });
+    }
 }
 module.exports = controller;

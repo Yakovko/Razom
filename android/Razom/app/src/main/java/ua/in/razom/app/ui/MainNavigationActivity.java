@@ -14,7 +14,6 @@ import de.greenrobot.event.EventBus;
 import ua.in.razom.app.R;
 import ua.in.razom.app.ui.fragments.PostIssueFragment;
 import ua.in.razom.app.ui.fragments.ProfileFragment;
-import ua.in.razom.app.ui.fragments.mapscreen.LocationFragment;
 
 public class MainNavigationActivity extends ActionBarActivity {
 
@@ -25,7 +24,7 @@ public class MainNavigationActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
         initActionBar();
-        showFragment(LocationFragment.newInstance(), false);
+        showFragment(PostIssueFragment.newInstance(), false);
         Api.InitDataService();
     }
 

@@ -2,16 +2,17 @@ var config = require('config')
     , HttpError = require('error').HttpError
     , _ = require('underscore'),
     async = require('async'),
+    CategoryModel = require('models/category/category'),
     IssueModel = require('models/issue/issue');
 
 require("mongooseDb");
 
-/*CREATE*/
+CREATE
 var issue = new IssueModel({
     title: 'test title',
     description: 'test description',
     lat: 4,
-    lon: 56,
+    lon: 34,
     category: "454534fghhddf5",
     tags: ['tag1', 'tag2']
 });
@@ -25,14 +26,14 @@ issue.save(function(err) {
 });
 
 /*WATCH*/
-/*IssueModel.watchUser("53777884d459967c076a08bb", "watchUserId2", function(err){
+IssueModel.watchUser("5377b256590016f418719cc6", "watchUserId2", function(err){
  if(err) {
  console.log('watchUser false');
  return false;
  }
 
  console.log('watchUser done');
- })*/
+ })
 
 /*UNWATCH*/
 /*
@@ -85,14 +86,14 @@ issue.save(function(err) {
  console.log('resolution_description true');
  })*/
 /*APPLY*/
-/*IssueModel.applyUser("53777884d459967c076a08bb", "applyUserId2", function(err){
+IssueModel.applyUser("5377b256590016f418719cc6", "applyUserId2", function(err){
  if(err) {
  console.log('applyUser false');
  return false;
  }
 
  console.log('applyUser done');
- })*/
+ })
 
 /*DISAPPLY*/
 /*
@@ -106,11 +107,22 @@ issue.save(function(err) {
  })*/
 
 /*COMMENT*/
-IssueModel.addComment("53777884d459967c076a08bb", "commentUserId", "comment", function(err){
-    if(err) {
-        console.log('addComment false');
-        return false;
-    }
+/*
+ IssueModel.addComment("53777884d459967c076a08bb", "commentUserId", "comment", function(err){
+ if(err) {
+ console.log('addComment false');
+ return false;
+ }
 
-    console.log('addComment done');
-})
+ console.log('addComment done');
+ })*/
+
+/*CATEGORY GET LIST*/
+/*
+ CategoryModel.find({}, function(err, categories){
+ if(err){
+ console.log("error get category list");
+ return false;
+ }
+ console.log(categories);
+ });*/

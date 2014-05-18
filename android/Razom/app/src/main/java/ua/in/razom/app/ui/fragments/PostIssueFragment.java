@@ -8,11 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import dataobjects.NewIssueObject;
-import dataservice.Api;
-import retrofit.Callback;
-import retrofit.RetrofitError;
-import retrofit.client.Response;
 import ua.in.razom.app.R;
 
 public class PostIssueFragment extends Fragment {
@@ -39,19 +34,6 @@ public class PostIssueFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        NewIssueObject testIssue = new NewIssueObject();
-        testIssue.setTitle("Test Issue #N");
-        Api.DataService.createIssue(testIssue, new Callback<NewIssueObject>() {
-            @Override
-            public void success(NewIssueObject newIssueObject, Response response) {
-                System.out.println(response);
-            }
-
-            @Override
-            public void failure(RetrofitError retrofitError) {
-                System.out.println(retrofitError);
-            }
-        });
     }
 
     @Override

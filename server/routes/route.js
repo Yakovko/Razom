@@ -13,4 +13,6 @@ module.exports = function(app) {
     app.post('/api/issue/disapply', api.disapply);
     app.post('/api/issue/comment/add', api.addComment);
     app.get('/api/category_list', api.categoryList);
+    app.get('/api/issues', api.issues);
+
 }

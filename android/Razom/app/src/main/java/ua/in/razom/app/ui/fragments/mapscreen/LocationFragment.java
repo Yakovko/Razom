@@ -19,6 +19,7 @@ import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.List;
@@ -63,7 +64,13 @@ public class LocationFragment extends Fragment implements
         map.setMyLocationEnabled(true);
         adapter = new MapInfoWindowAdapter(inflater);
         map.setInfoWindowAdapter(adapter);
-
+        map.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+            @Override
+            public void onInfoWindowClick(Marker marker) {
+                NavigationAction action = NavigationAction.VIEW_ISSUE;
+                action.setIssueId(marker.getTitle());
+            }
+        });
 
         // Needs to call MapsInitializer before doing any CameraUpdateFactory calls
         MapsInitializer.initialize(this.getActivity());

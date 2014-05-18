@@ -8,6 +8,7 @@ public enum NavigationAction {
     PROFILE;
     private double lat;
     private double lon;
+    private String issueId;
 
     public double getLat() {
         return lat;
@@ -23,5 +24,14 @@ public enum NavigationAction {
 
     public void setLon(double lon) {
         this.lon = lon;
+    }
+
+
+    public String getIssueId() {
+        return issueId;
+    }
+
+    public void setIssueId(String issueId) {
+        this.issueId = issueId;
     }
 }

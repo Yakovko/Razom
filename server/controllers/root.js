@@ -11,9 +11,6 @@ var controller = {
     home: function(req, res, next){
         res.render('index', {});
     },
-    map: function(req, res, next){
-        res.render('map', {});
-    },
     issues: function(req, res, next) {
         var query = api.issuesQuery();
 

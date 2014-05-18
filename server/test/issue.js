@@ -7,7 +7,7 @@ var config = require('config')
 
 require("mongooseDb");
 
-CREATE
+/*CREATE*/
 var issue = new IssueModel({
     title: 'test title',
     description: 'test description',
@@ -33,7 +33,7 @@ IssueModel.watchUser("5377b256590016f418719cc6", "watchUserId2", function(err){
  }
 
  console.log('watchUser done');
- })
+ });
 
 /*UNWATCH*/
 /*

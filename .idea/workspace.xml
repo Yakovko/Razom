@@ -2,46 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d77a642-3a71-4566-b1a4-facc316c0f9b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/tools/ScalingHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/drawable/place_pin02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/drawable/place_pin03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataobjects/Comment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataobjects/Issue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/TestApiFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/edit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/edit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/style/style.css" />
-      <change type="DELETED" beforePath="D:\hakaton\Razom\web\index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/.gitignore" afterPath="$PROJECT_DIR$/android/Razom/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataservice/DataService.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataservice/DataService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/mapscreen/LocationFragment.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/mapscreen/LocationFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/MainNavigationActivity.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/MainNavigationActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/actions/NavigationAction.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/actions/NavigationAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataobjects/NewIssueRequestObject.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/dataobjects/NewIssueRequestObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/PostIssueFragment.java" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/java/ua/in/razom/app/ui/fragments/PostIssueFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/api.js" afterPath="$PROJECT_DIR$/server/controllers/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/fragment_location.xml" afterPath="$PROJECT_DIR$/android/Razom/app/src/main/res/layout/fragment_location.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/gradle.properties" afterPath="$PROJECT_DIR$/android/Razom/gradle.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/index.hbs" afterPath="$PROJECT_DIR$/server/views/index.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/public/js/parallax.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/layouts/main.hbs" afterPath="$PROJECT_DIR$/server/views/layouts/main.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/.idea/misc.xml" afterPath="$PROJECT_DIR$/android/Razom/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/Razom/app/proguard-rules.txt" afterPath="$PROJECT_DIR$/android/Razom/app/proguard-rules.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/public/style.css" afterPath="$PROJECT_DIR$/server/public/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Razom.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400400895576" ignored="false" />
-    <file path="/main.hbs" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400398369729" ignored="false" />
+    <file path="/main.hbs" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400407798699" ignored="false" />
     <file path="/site-layout.css" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400400953800" ignored="false" />
     <file path="/style.css" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400405277606" ignored="false" />
     <file path="/index.hbs" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400402075187" ignored="false" />
+    <file path="/parallax.js" changelist="7d77a642-3a71-4566-b1a4-facc316c0f9b" time="1400411890871" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,11 +61,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/public/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="21" selection-start="114971" selection-end="114971" vertical-scroll-proportion="0.41379312">
+            <state line="21" column="12" selection-start="229720" selection-end="229720" vertical-scroll-proportion="-2.04">
+              <folding>
+                <element signature="e#113587#114506#2" expanded="true" />
+                <element signature="e#228294#229213#2" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.hbs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/views/layouts/main.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="4" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parallax.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/public/js/parallax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="26" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.6647887">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,6 +115,8 @@
         <option value="D:/хакатон/Razom-UI/less/site-layout.css" />
         <option value="$PROJECT_DIR$/server/views/index.hbs" />
         <option value="$PROJECT_DIR$/server/public/style.css" />
+        <option value="$PROJECT_DIR$/server/views/layouts/main.hbs" />
+        <option value="$PROJECT_DIR$/server/public/js/parallax.js" />
       </list>
     </option>
   </component>
@@ -280,6 +278,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Razom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -354,11 +374,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25729647" sideWeight="0.67075306" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25729647" sideWeight="0.6695958" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924694" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33040422" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924694" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -461,13 +481,11 @@
     <entry file="file://$PROJECT_DIR$/server/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="91" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#113587#114506#2" expanded="true" />
+            <element signature="e#228294#229213#2" expanded="true" />
+          </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/views/layouts/main.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.95348835" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
@@ -514,8 +532,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="114971" selection-end="114971" vertical-scroll-proportion="0.41379312">
+        <state line="21" column="12" selection-start="229720" selection-end="229720" vertical-scroll-proportion="-2.04">
+          <folding>
+            <element signature="e#113587#114506#2" expanded="true" />
+            <element signature="e#228294#229213#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views/layouts/main.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/public/js/parallax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="26" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.6647887">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

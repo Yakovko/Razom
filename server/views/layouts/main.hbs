@@ -11,6 +11,7 @@
     <link href="/animate.css" rel="stylesheet" type="text/css" />
     <link href="/style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 </head>
 <body>
 <div id="header">
@@ -22,7 +23,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">Razom.in.ua</a>
+                <a href="/" class="navbar-brand"><img src="img/Logo.png" style="margin-top: -20px;"/></a>
             </div>
             <div class="navbar-collapse collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -51,5 +52,43 @@
 <div class="main-content">
     {{{body}}}
 </div>
+<script type="text/javascript">
+    function initialize() {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            console.log(position);
+            var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+            var myOptions = {
+                zoom: 12,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+            $.get("api/issues?lon=" + position.coords.longitude + "&lat=" + position.coords.latitude + "&radius=" + 500, function(data) {
+                for(var i = 0; i < data.length; i++) {
+                    var issue = data[i];
+
+                    var contentString = '<div style="padding: 10px;"><img style="width: 80px; height: 80px; float:left;;" src="' + issue.media[0] + '"/><div style="float: right; margin-left: 10px;"><div style="font-size: 18px;">'+ issue.title +'</div>' + issue.description + '</div></div>';
+                    var infoWindow = new google.maps.InfoWindow({
+                        content: contentString,
+                        maxWidth: '400px'
+                    });
+
+                    var marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(issue.lat, issue.lon),
+                        map: map,
+                        title: issue.title
+                    });
+
+                    google.maps.event.addListener(marker, 'click', function() {
+                        infoWindow.open(map,marker);
+                    });
+                }
+            });
+        });
+    }
+
+    initialize();
+</script>
 </body>
 </html>

@@ -24,6 +24,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.util.List;
 
 import actions.NavigationAction;
+import adapters.MapInfoWindowAdapter;
 import dataobjects.Issue;
 import dataservice.Api;
 import de.greenrobot.event.EventBus;
@@ -42,6 +43,8 @@ public class LocationFragment extends Fragment implements
     private MapView mapView;
     private GoogleMap map;
     private View addPinView;
+    private MapInfoWindowAdapter adapter;
+
 
     public static LocationFragment newInstance() {
         return new LocationFragment();
@@ -58,7 +61,8 @@ public class LocationFragment extends Fragment implements
         map = mapView.getMap();
         map.getUiSettings().setMyLocationButtonEnabled(true);
         map.setMyLocationEnabled(true);
-        //map.setInfoWindowAdapter(new MapInfoWindowAdapter(inflater));
+        adapter = new MapInfoWindowAdapter(inflater);
+        map.setInfoWindowAdapter(adapter);
 
 
         // Needs to call MapsInitializer before doing any CameraUpdateFactory calls
@@ -96,6 +100,8 @@ public class LocationFragment extends Fragment implements
             @Override
             public void success(List<Issue> issues, Response response) {
                 addIssuesToMap(issues);
+                adapter.setIssues(issues);
+//                adapter.notifyAll();
             }
 
             @Override
